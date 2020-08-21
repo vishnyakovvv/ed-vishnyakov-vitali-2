@@ -1,0 +1,82 @@
+.service-container {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-bottom: 88px;
+}
+
+.service-wrapper {
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.contanier-delivery-description {
+  margin-left: 60px;
+}
+
+.service-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 38px;
+  line-height: 46px;
+
+  margin: 32px 0 6px 61px;
+}
+
+.service-list {
+  padding: 0;
+
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.service-item {
+  width: 326px;
+
+  list-style-type: none;
+}
+
+.service-item-active {
+  background-color: rgba(112, 187, 220, 0.2);
+
+  font-weight: 700;
+}
+
+.service-item-link {
+  font-family: "Crimson Text", serif;
+  font-size: 26px;
+  line-height: 32px;
+  color: #1e0606;
+
+  display: block;
+  padding: 14px 180px 9px 60px;
+}
+
+.delivery-paragraph {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+
+  margin-left: 121px;
+  margin-bottom: 36px;
+
+  width: 470px;
+
+  margin-left: 60px;
+}
+
+.paragraph1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.paragraph2 {
+  margin-bottom: 0;
+}
+
+.service-link {
+  margin-left: 60px;
+}

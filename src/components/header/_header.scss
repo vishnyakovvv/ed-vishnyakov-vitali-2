@@ -1,24 +1,71 @@
-header {
-  background-color: #89f7fe;
-  height: 80px;
-  display: flex;
-  align-items: center;
-
-  span {
-    padding-right: 20px;
-  }
-
-  a {
-    color: #000;
-    text-decoration: none;
-
-    &:not(:last-child) {
-      margin-right: 20px;
-    }
-    &:hover {
-      border-bottom: 1px solid #000;
-    }
-  }
+.header {
+  margin-top: 50px;
+  margin-bottom: 40px;
 }
 
+.header-wrapper {
+  display: flex;
+}
 
+.header-logo {
+  display: block;
+
+  margin-right: 60px;
+}
+
+.header-nav {
+  font-family: "Open Sans", sans-serif;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  width: 100%;
+}
+
+.header-list {
+  list-style-type: none;
+  text-transform: uppercase;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  padding: 0;
+}
+
+.header-list-item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+
+  margin-right: 20px;
+}
+
+.header-list-item-link {
+  color: #000000;
+}
+
+.header-search {
+  margin: 0;
+}
+
+.header-contactus {
+  margin-right: 0;
+  margin-left: 23.45px;
+}
+
+.header-text-contactus {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.header-logo-link:hover,
+.header-list-item:hover {
+  opacity: 50%;
+}
+
+.header-logo-link:active,
+.header-list-item:active {
+  opacity: 25%;
+}

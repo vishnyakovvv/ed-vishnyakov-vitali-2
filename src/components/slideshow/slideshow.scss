@@ -1,0 +1,125 @@
+.slideshow-container {
+  padding-top: 89px;
+  margin-bottom: 91px;
+}
+
+.slide-list {
+  position: relative;
+
+  list-style: none;
+
+  padding: 0;
+
+  margin: 0;
+
+  width: 100%;
+}
+
+.slide-image {
+  position: absolute;
+  left: 445px;
+  top: -90px;
+
+  z-index: 2;
+}
+
+.slide-wrapper {
+  position: relative;
+
+  max-width: 1180px;
+
+  background-color: #eee4db;
+}
+
+.slide__number-strips {
+  position: absolute;
+  left: 28px;
+  top: 17px;
+}
+
+.slide-number {
+  font-family: "Montserrat", sans-serif;
+  font-size: 60px;
+  color: rgba(30, 6, 6, 0.05);
+  font-weight: 400;
+  margin-bottom: 13px;
+}
+
+.strip {
+  display: block;
+
+  border: none;
+
+  margin: 0 0 11px 3px;
+
+  width: 31px;
+  height: 3px;
+
+  background-color: #d6cac2;
+
+  outline: none;
+
+  cursor: pointer;
+}
+
+.strip:active,
+.strip:focus,
+.strip:hover {
+  background-color: rgba(30, 6, 6, 0.6);
+}
+
+.slider__title-text-link {
+  padding-left: 133px;
+  padding-top: 90px;
+}
+
+.slide-title {
+  text-transform: uppercase;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  line-height: 44px;
+
+  margin-bottom: 18px;
+  margin-top: 0;
+
+  width: 400px;
+}
+
+.slide-text {
+  font-family: "Crimson Text", serif;
+  font-size: 20px;
+  line-height: 25px;
+
+  margin-bottom: 29px;
+  margin-top: 0;
+}
+
+.slide-link {
+  width: 161px;
+
+  background-color: black;
+
+  text-align: center;
+}
+
+.slide-bottom-info {
+  margin-top: 99px;
+}
+
+.slide-bottom-text {
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+
+  background-color: #c29974;
+
+  padding: 11px 364px;
+
+  margin: 0;
+
+  text-align: center;
+}

@@ -1,0 +1,105 @@
+.category-container {
+  margin-bottom: 90px;
+}
+
+.category-title {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 38px;
+  line-height: 46px;
+
+  margin-top: 0;
+  margin-bottom: 31px;
+}
+
+.category-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  list-style-type: none;
+
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  padding-left: 0;
+
+  margin-top: 0;
+  margin-bottom: 7px;
+}
+
+.category-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-right: 20px;
+
+  cursor: pointer;
+}
+
+.category-list-accessories {
+  margin-right: 0;
+}
+
+.category-button-text {
+  display: flex;
+}
+
+.category-button {
+  display: flex;
+  padding-top: 2px;
+
+  border: none;
+
+  padding: 0;
+
+  margin-top: 2px;
+}
+
+.category-link {
+  margin: 0;
+}
+
+.category-previous {
+  width: 37px;
+  height: 37px;
+
+  background: rgba(112, 187, 220, 0.2);
+
+  border: none;
+
+  cursor: pointer;
+
+  margin-right: 6px;
+}
+
+.category-next {
+  width: 37px;
+  height: 37px;
+
+  background: rgba(112, 187, 220, 0.2);
+
+  border: none;
+
+  cursor: pointer;
+}
+
+.image-previous {
+  margin-top: 3px;
+}
+
+.category-card-text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+
+  margin: 0 20px;
+
+  width: 540px;
+}
+
+.category-card-text {
+  vertical-align: middle;
+}

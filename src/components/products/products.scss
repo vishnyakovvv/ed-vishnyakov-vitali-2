@@ -1,0 +1,97 @@
+.products-list {
+  list-style-type: none;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  padding: 0;
+
+  margin-top: 0;
+  margin-bottom: 34px;
+}
+
+.products-list li:nth-child(3n + 3) {
+  margin-right: 0;
+}
+
+.products-item {
+  width: 380px;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.products-card {
+  position: relative;
+}
+
+.products-image {
+  margin-bottom: 27px;
+}
+
+.products-card-hover {
+  display: none;
+}
+
+.products-card:hover .products-card-hover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  width: 207px;
+  height: 207px;
+
+  background-color: #e5eaf8;
+  opacity: 0.9;
+}
+
+.products-card:active .products-card-hover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  width: 207px;
+  height: 207px;
+
+  background-color: #e5eaf8;
+  opacity: 0.67;
+}
+
+.card-hover-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 29px;
+  color: #1e0606;
+  text-transform: uppercase;
+
+  margin: auto;
+}
+
+.products-name {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #1e0606;
+
+  margin-bottom: 20px;
+}
+
+.products-price {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #1e0606;
+
+  margin: 0 0 25px 0;
+}

@@ -1,0 +1,86 @@
+.pages {
+  position: relative;
+
+  text-align: center;
+
+  padding-bottom: 3px;
+
+  margin-bottom: 60px;
+}
+
+.page {
+  line-height: 20px;
+  padding: 0;
+  margin: 0 26px 0 36px;
+  font-size: 20px;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  height: 17px;
+  width: 10px;
+  top: 4px;
+}
+.next {
+  float: right;
+}
+.prev:before,
+.next:before {
+  background-color: rgba(30, 6, 6, 0.12);
+  content: "";
+  height: 20px;
+  left: 4px;
+  position: absolute;
+  top: 1px;
+  transform: rotate(45deg);
+  width: 20px;
+}
+.next:before {
+  left: auto;
+  right: 4px;
+}
+.prev:after,
+.next:after {
+  background-color: white;
+  content: "";
+  height: 20px;
+  left: 9px;
+  position: absolute;
+  top: 1px;
+  transform: rotate(45deg);
+  width: 20px;
+}
+.next:after {
+  left: auto;
+  right: 8px;
+}
+
+.page-nomber {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  color: #1e0606;
+}
+
+.next:hover::before,
+.prev:hover::before {
+  background-color: #c29974;
+}
+
+.next:active::before,
+.prev:active::before {
+  background-color: #c29974;
+  opacity: 0.5;
+}
+
+.page-nomber:hover {
+  color: #1e0606;
+  opacity: 0.5;
+}
+
+.page-nomber:active,
+.page-nomber:focus {
+  color: #c29974;
+}

@@ -1,0 +1,50 @@
+.modal-bg {
+  display: flex;
+
+  display: none;
+
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  background-color: rgba(125, 151, 218, 0.8);
+
+  z-index: 2;
+}
+
+.modal-bg_open {
+  display: flex;
+}
+
+.form-wrapper {
+  margin: auto;
+  position: relative;
+}
+
+.button-close {
+  position: absolute;
+  top: 0;
+  right: -25px;
+  cursor: pointer;
+
+  width: 15px;
+  height: 15px;
+
+  border: none;
+
+  background: url(/static/images/exit.svg);
+}
+
+.button-close:hover {
+  color: #ffffff;
+  opacity: 0.5;
+}
+.button-close:active {
+  color: #ffffff;
+  opacity: 0.3;
+}
+.button-close:focus {
+  outline: none;
+}
