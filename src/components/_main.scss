@@ -1,0 +1,80 @@
+.container {
+  min-height: 100%;
+  width: 1180px;
+  margin: 0 auto;
+  padding: 0 110px;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+h3 {
+  margin: 0;
+}
+
+.title__page {
+  text-transform: uppercase;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  line-height: 44px;
+
+  margin-top: 60px;
+  margin-bottom: 19px;
+}
+
+/* breadcrumbs */
+
+.breadcrumbs {
+  list-style: none;
+
+  margin-bottom: 50px;
+
+  padding: 0;
+
+  display: flex;
+
+  &__list {
+    font-family: "Crimson Text", serif;
+    font-size: 20px;
+    line-height: 25px;
+
+    display: inline-block;
+
+    margin-right: 22px;
+
+    &:not(:last-child):after {
+      content: url(/static/images/breadcrumb.svg);
+      margin-left: 17px;
+      font-style: normal;
+    }
+  }
+  &__list-link {
+    color: #1e0606;
+
+    text-decoration: none;
+  }
+
+  &__active {
+    color: #1e0606;
+
+    opacity: 0.5;
+
+    text-decoration: none;
+
+    font-style: italic;
+  }
+}
