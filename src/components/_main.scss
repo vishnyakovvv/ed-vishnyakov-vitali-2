@@ -1,3 +1,6 @@
+@import "./vars";
+@import "./colors";
+
 .container {
   min-height: 100%;
   width: 1180px;
@@ -17,10 +20,6 @@ body {
   margin: 0;
 }
 
-.visually-hidden {
-  display: none;
-}
-
 h3 {
   margin: 0;
 }
@@ -32,8 +31,8 @@ h3 {
   font-size: 40px;
   line-height: 44px;
 
-  margin-top: 60px;
-  margin-bottom: 19px;
+  margin-top: 59px;
+  margin-bottom: 18px;
 }
 
 /* breadcrumbs */
@@ -63,18 +62,59 @@ h3 {
     }
   }
   &__list-link {
-    color: #1e0606;
+    color: $c_black--light;
 
     text-decoration: none;
   }
 
   &__active {
-    color: #1e0606;
+    color: $c_black--light;
 
     opacity: 0.5;
 
     text-decoration: none;
 
     font-style: italic;
+  }
+}
+
+// link, button
+
+.link,
+.button {
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  color: $c_white;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+
+  background-color: $c_black;
+
+  border: none;
+
+  text-align: center;
+
+  padding: 9px 22px;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: $c_gold;
+
+    transition: $tr_duration $tr_easing;
+
+    outline: none;
+  }
+
+  &:focus {
+    outline: none;
+
+    transition: $tr_duration $tr_easing;
+  }
+  &:active {
+    background-color: $c_gold--light;
+
+    outline: none;
   }
 }
