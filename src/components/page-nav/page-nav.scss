@@ -1,3 +1,6 @@
+@import "../vars";
+@import "../colors";
+
 .pages {
   position: relative;
 
@@ -6,81 +9,94 @@
   padding-bottom: 3px;
 
   margin-bottom: 60px;
-}
 
-.page {
-  line-height: 20px;
-  padding: 0;
-  margin: 0 26px 0 36px;
-  font-size: 20px;
-}
+  &__page {
+    line-height: 20px;
+    padding: 0;
+    margin: 0 26px 0 36px;
+    font-size: 20px;
+  }
 
-.prev,
-.next {
-  cursor: pointer;
-  height: 17px;
-  width: 10px;
-  top: 4px;
-}
-.next {
-  float: right;
-}
-.prev:before,
-.next:before {
-  background-color: rgba(30, 6, 6, 0.12);
-  content: "";
-  height: 20px;
-  left: 4px;
-  position: absolute;
-  top: 1px;
-  transform: rotate(45deg);
-  width: 20px;
-}
-.next:before {
-  left: auto;
-  right: 4px;
-}
-.prev:after,
-.next:after {
-  background-color: white;
-  content: "";
-  height: 20px;
-  left: 9px;
-  position: absolute;
-  top: 1px;
-  transform: rotate(45deg);
-  width: 20px;
-}
-.next:after {
-  left: auto;
-  right: 8px;
-}
+  &__prev,
+  &__next {
+    cursor: pointer;
 
-.page-nomber {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  color: #1e0606;
-}
+    height: 17px;
+    width: 10px;
 
-.next:hover::before,
-.prev:hover::before {
-  background-color: #c29974;
-}
+    top: 4px;
 
-.next:active::before,
-.prev:active::before {
-  background-color: #c29974;
-  opacity: 0.5;
-}
+    &:before {
+      background-color: $c_black--light-2;
+      content: "";
+      height: 20px;
+      left: 4px;
+      position: absolute;
+      top: 1px;
+      transform: rotate(45deg);
+      width: 20px;
+    }
 
-.page-nomber:hover {
-  color: #1e0606;
-  opacity: 0.5;
-}
+    &:after {
+      background-color: $c_white;
+      content: "";
+      height: 20px;
+      left: 9px;
+      position: absolute;
+      top: 1px;
+      transform: rotate(45deg);
+      width: 20px;
+    }
 
-.page-nomber:active,
-.page-nomber:focus {
-  color: #c29974;
+    &:hover::before {
+      background-color: $c_gold;
+
+      transition: $tr_duration $tr_easing;
+    }
+
+    &:active::before {
+      background-color: $c_gold;
+
+      opacity: 0.5;
+
+      transition: $tr_duration $tr_easing;
+    }
+  }
+
+  &__next {
+    float: right;
+
+    &:before {
+      left: auto;
+      right: 4px;
+    }
+
+    &:after {
+      left: auto;
+      right: 8px;
+    }
+  }
+
+  &__nomber {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    color: $c_black--light;
+
+    &:hover {
+      color: $c_black--light;
+
+      opacity: 0.5;
+
+      transition: $tr_duration $tr_easing;
+    }
+
+    &:active,
+    &:focus {
+      color: $c_gold;
+
+      transition: $tr_duration $tr_easing;
+    }
+  }
 }

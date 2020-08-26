@@ -1,27 +1,27 @@
 .description {
   margin-bottom: 60px;
-}
 
-.description-title {
-  text-transform: uppercase;
+  &__title {
+    text-transform: uppercase;
 
-  font-family: "Montserrat", sans-serif;
-  font-size: 38px;
-  line-height: 46px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 38px;
+    line-height: 46px;
 
-  margin-bottom: 25px;
-  margin-left: 200px;
-}
+    margin-bottom: 26px;
+    margin-left: 200px;
+  }
 
-.description-text {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 500;
+  &__text {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
 
-  font-size: 16px;
-  line-height: 22px;
+    font-size: 16px;
+    line-height: 22px;
 
-  width: 670px;
+    width: 670px;
 
-  margin-top: 0;
-  margin-left: 200px;
+    margin-top: 0;
+    margin-left: 200px;
+  }
 }

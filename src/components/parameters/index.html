@@ -5,93 +5,90 @@
 
 
 <section class="parameters">
-    <h2 class="visually-hidden">parameter toys</h2>
-    <div class="container">
-        <form class="parameters-form" action="/pages/toys/index.html">
-            <fieldset class="fieldset-parameters parameters-cost">
-                <legend class="parameters-name">Cost</legend>
-                <input class="input-wrapper range-input" type="range" name="cost" min="0" max="500" value="10">
-                <div class="range-cost">
-                    <div class="left">0</div>
-                    <div class="right">500</div>
-                </div>
-            </fieldset>
-            <fieldset class="fieldset-parameters parameters-color">
-                <legend class="parameters-name">Color</legend>
-                <ul class="color-list">
-                    <li class="color-item">
-                        <label class="label-parameters">
-                            <input class="checkbox-color" name="colors" type="checkbox" value="black">
-                            <span class="color-fake"></span>
-                            <span class="color-label">Black</span>
-                        </label>
-                    </li>
-                    <li class="color-item">
-                        <label class="label-parameters">
-                            <input class="checkbox-color" name="colors" type="checkbox" value="blue">
-                            <span class="color-fake"></span>
-                            <span class="color-label">Blue</span>
-                        </label>
-                    </li>
-                    <li class="color-item">
-                        <label class="label-parameters">
-                            <input class="checkbox-color" name="colors" type="checkbox" value="green">
-                            <span class="color-fake"></span>
-                            <span class="color-label"> Green</span>
-                        </label>
-                    </li>
-                    <li class="color-item">
-                        <label class="label-parameters">
-                            <input class="checkbox-color" name="colors" type="checkbox" value="white">
-                            <span class="color-fake"></span>
-                            <span class="color-label">White</span>
-                        </label>
-                    </li>
-                </ul>
-            </fieldset>
-            <fieldset class="fieldset-parameters parameters-delivery">
-                <legend class="parameters-name">Delivery</legend>
-                <ul class="delivery-list">
-                    <li class="delivery-item">
-                        <label class="label-parameters">
-                            <input class="radio-delivery" name="delivery" type="radio" value="free_shipping">
-                            <span class="delivery-fake"></span>
-                            <span class="delivery-label">Free shipping</span>
-                        </label>
-                    </li>
-                    <li class="delivery-item">
-                        <label class="label-parameters">
-                            <input class="radio-delivery" name="delivery" type="radio" value="fast_shipping">
-                            <span class="delivery-fake"></span>
-                            <span class="delivery-label">Fast shipping</span>
-                        </label>
-                    </li>
-                </ul>
-            </fieldset>
-            <fieldset class="fieldset-parameters parameters-amount">
-                <legend class="parameters-name">Amount</legend>
-                <ul class="amount-list">
-                    <li class="amount-item">
-                        <input id="radio__0-5" name="amount" type="radio" value="0-5">
-                        <label for="radio__0-5" class="delivery-label">
-                            <span class="amount-label">0-5</span>
-                        </label>
-                    </li>
-                    <li class="amount-item">
-                        <input id="radio__10-20" name="amount" type="radio" value="10-20">
-                        <label for="radio__10-20" class="delivery-label">
-                            <span class="amount-label">10-20</span>
-                        </label>
-                    </li>
-                    <li class="amount-item">
-                        <input id="radio__20-50" name="amount" type="radio" value="20-50">
-                        <label for="radio__20-50" class="delivery-label">
-                            <span class="amount-label">20-50</span>
-                        </label>
-                    </li>
-                </ul>
-            </fieldset>
-            <button class="parameters-button button" type="submit">apply</button>
-        </form>
-    </div>
+    <form class="parameters__form container" action="/pages/toys/index.html">
+        <fieldset class="fieldset-cost parameters__fieldset">
+            <legend class="parameters__name">Cost</legend>
+            <input class="fieldset-cost__range-input" type="range" name="cost" min="0" max="500" value="10">
+            <div class="fieldset-cost__scale">
+                <span class="fieldset-cost__scale-left">0</span>
+                <span class="fieldset-cost__scale-right">500</span>
+            </div>
+        </fieldset>
+        <fieldset class="fieldset-color parameters__fieldset">
+            <legend class="parameters__name">Color</legend>
+            <ul class="fieldset-color__list">
+                <li class="fieldset-color__list-item">
+                    <label class="parameters__label">
+                        <input class="fieldset-color__checkbox" name="colors" type="checkbox" value="black">
+                        <span class="fieldset-color__fake"></span>
+                        <span class="fieldset-color__label">Black</span>
+                    </label>
+                </li>
+                <li class="fieldset-color__list-item">
+                    <label class="parameters__label">
+                        <input class="fieldset-color__checkbox" name="colors" type="checkbox" value="blue">
+                        <span class="fieldset-color__fake"></span>
+                        <span class="fieldset-color__label">Blue</span>
+                    </label>
+                </li>
+                <li class="fieldset-color__list-item">
+                    <label class="parameters__label">
+                        <input class="fieldset-color__checkbox" name="colors" type="checkbox" value="green">
+                        <span class="fieldset-color__fake"></span>
+                        <span class="fieldset-color__label"> Green</span>
+                    </label>
+                </li>
+                <li class="fieldset-color__list-item">
+                    <label class="parameters__label">
+                        <input class="fieldset-color__checkbox" name="colors" type="checkbox" value="white">
+                        <span class="fieldset-color__fake"></span>
+                        <span class="fieldset-color__label">White</span>
+                    </label>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset class="fieldset-delivery parameters__fieldset">
+            <legend class="parameters__name">Delivery</legend>
+            <ul class="fieldset-delivery__list">
+                <li class="fieldset-delivery__item">
+                    <label class="parameters__label">
+                        <input class="fieldset-delivery__radio" name="delivery" type="radio" value="free_shipping">
+                        <span class="fieldset-delivery__fake"></span>
+                        <span class="fieldset-delivery__label">Free shipping</span>
+                    </label>
+                </li>
+                <li class="fieldset-delivery__item">
+                    <label class="parameters__label">
+                        <input class="fieldset-delivery__radio" name="delivery" type="radio" value="fast_shipping">
+                        <span class="fieldset-delivery__fake"></span>
+                        <span class="fieldset-delivery__label">Fast shipping</span>
+                    </label>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset class="fieldset-amount parameters__fieldset">
+            <legend class="parameters__name">Amount</legend>
+            <ul class="fieldset-amount__list">
+                <li class="fieldset-amount__item">
+                    <input id="radio__0-5" name="amount" type="radio" value="0-5">
+                    <label for="radio__0-5" class="parameters__label">
+                        <span class="fieldset-amount__label">0-5</span>
+                    </label>
+                </li>
+                <li class="fieldset-amount__item">
+                    <input id="radio__10-20" name="amount" type="radio" value="10-20">
+                    <label for="radio__10-20" class="parameters__label">
+                        <span class="fieldset-amount__label">10-20</span>
+                    </label>
+                </li>
+                <li class="fieldset-amount__item">
+                    <input id="radio__20-50" name="amount" type="radio" value="20-50">
+                    <label for="radio__20-50" class="parameters__label">
+                        <span class="fieldset-amount__label">20-50</span>
+                    </label>
+                </li>
+            </ul>
+        </fieldset>
+        <button class="parameters__button button" type="submit">apply</button>
+    </form>
 </section>

@@ -1,71 +1,84 @@
+@import "../vars";
+@import "../colors";
+
 .header {
+  display: flex;
+
+  align-items: center;
+
   margin-top: 50px;
-  margin-bottom: 40px;
-}
+  margin-bottom: 37px;
 
-.header-wrapper {
-  display: flex;
-}
+  &__link {
+    display: block;
 
-.header-logo {
-  display: block;
+    margin-right: 60px;
 
-  margin-right: 60px;
-}
+    &:hover {
+      opacity: 50%;
+      transition: $tr_duration $tr_easing;
+    }
 
-.header-nav {
-  font-family: "Open Sans", sans-serif;
+    &:active {
+      opacity: 25%;
+    }
+  }
 
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  // navigation
 
-  width: 100%;
-}
+  &__nav {
+    font-family: "Open Sans", sans-serif;
 
-.header-list {
-  list-style-type: none;
-  text-transform: uppercase;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+    width: 100%;
+  }
 
-  padding: 0;
-}
+  &__nav-list {
+    list-style-type: none;
+    text-transform: uppercase;
 
-.header-list-item {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 19px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
-  margin-right: 20px;
-}
+    padding: 0;
+  }
 
-.header-list-item-link {
-  color: #000000;
-}
+  &__nav-item {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
 
-.header-search {
-  margin: 0;
-}
+    margin-right: 20px;
 
-.header-contactus {
-  margin-right: 0;
-  margin-left: 23.45px;
-}
+    &:hover {
+      opacity: 50%;
+      transition: $tr_duration $tr_easing;
+    }
 
-.header-text-contactus {
-  font-weight: 700;
-  letter-spacing: 0.5px;
-}
+    &:active {
+      opacity: 25%;
+    }
+  }
 
-.header-logo-link:hover,
-.header-list-item:hover {
-  opacity: 50%;
-}
+  &__nav-link {
+    color: $c_black;
+  }
 
-.header-logo-link:active,
-.header-list-item:active {
-  opacity: 25%;
+  &__nav-search {
+    margin: 0;
+  }
+
+  &__contactus {
+    margin-right: 0;
+    margin-left: 23.45px;
+  }
+
+  &__text-contactus {
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
 }

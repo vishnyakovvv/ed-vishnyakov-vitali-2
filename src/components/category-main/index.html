@@ -1,43 +1,41 @@
-<section class="category-container">
-    <div class="container">
-        <h2 class="category-title">category products</h2>
-        <ul class="category-list">
-            <li class="category-item">
-                <a class="category-link" href="#">
-                    <h3 class="card-title">apparel kids</h3>
-                    <img class="category-image" src="/static/images/apparel_kids.png" alt="apparel_kids.png">
-                </a>
-            </li>
-            <li class="category-item">
-                <a class="category-link" href="#">
-                    <h3 class="card-title">holiday shop</h3>
-                    <img class="category-image" src="/static/images/holiday_shop.png" alt="holiday_shop.png">
-                </a>
-            </li>
-            <li class="category-item">
-                <a class="category-link" href="/pages/toys/index.html">
-                    <h3 class="card-title">toys</h3>
-                    <img class="category-image" src="/static/images/toys.png" alt="toys.png">
-                </a>
-            </li>
-            <li class="category-item category-list-accessories">
-                <a class="category-link" href="#">
-                    <h3 class="card-title">accessories</h3>
-                    <img class="category-image" src="/static/images/accessories.png" alt="accessories.png">
-                </a>
-            </li>
-        </ul>
-        <div class="category-button-text">
-            <div class="category-button">
-                <button class="category-previous"><img class="image-previous" src="/static/images/prev.svg"
-                        alt="previous"></button>
-                <button class="category-next"><img class="image-previous" src="/static/images/next.svg"
-                        alt="previous"></button>
-            </div>
-            <p class="category-card-text">
-                Modern finds for the modern home. Curated goods by unique designers
-                around the world from fashion to furniture for kids and adults.
-            </p>
+<section class="category container">
+    <h2 class="category__title">category products</h2>
+    <ul class="category__list">
+        @@include("category-main/category-product.html",{
+        "title": "apparel kids",
+        "src": "/static/images/apparel_kids.png",
+        "alt": "apparel_kids",
+        "link": "#"
+        })
+        @@include("category-main/category-product.html",{
+        "title": "holiday shop",
+        "src": "/static/images/holiday_shop.png",
+        "alt": "holiday_shop",
+        "link": "#"
+        })
+        @@include("category-main/category-product.html",{
+        "title": "toys",
+        "src": "/static/images/toys.png",
+        "alt": "toys",
+        "link": "/pages/toys/index.html"
+        })
+        @@include("category-main/category-product.html",{
+        "title": "accessories",
+        "src": "/static/images/accessories.png",
+        "alt": "accessories",
+        "link": "#"
+        })
+    </ul>
+    <div class="category__button-text">
+        <div class="category__button-wrapper">
+            <button class="category__button"><img class="category__botton-img" src="/static/images/prev.svg"
+                    alt="previous"></button>
+            <button class="category__button"><img class="category__botton-img" src="/static/images/next.svg"
+                    alt="previous"></button>
         </div>
+        <p class="category__card-text">
+            Modern finds for the modern home. Curated goods by unique designers
+            around the world from fashion to furniture for kids and adults.
+        </p>
     </div>
 </section>

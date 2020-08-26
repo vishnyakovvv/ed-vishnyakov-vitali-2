@@ -3,46 +3,43 @@
 "page": "Catalog"
 })
 
-<div class="container">
-    <section class="category-products">
-        <h2 class="visually-hidden">category Products</h2>
-        <ul class="category-list-catalog">
-            <li class="category-item">
-                <a class="category-link" href="#">
-                    <h3 class="card-title">apparel kids</h3>
-                    <img class="category-image" src="/static/images/apparel_kids.png" alt="apparel_kids.png">
-                </a>
-            </li>
-            <li class="category-item">
-                <a class="category-link" href="#">
-                    <h3 class="card-title">holiday shop</h3>
-                    <img class="category-image" src="/static/images/holiday_shop.png" alt="holiday_shop.png">
-                </a>
-            </li>
-            <li class="category-item">
-                <a class="category-link" href="/pages/toys/index.html">
-                    <h3 class="card-title">toys</h3>
-                    <img class="category-image" src="/static/images/toys.png" alt="toys.png">
-                </a>
-            </li>
-            <li class="category-item category-item-bottom">
-                <a class="category-link" href="#">
-                    <h3 class="card-title">accessories</h3>
-                    <img class="category-image" src="/static/images/accessories.png" alt="accessories.png">
-                </a>
-            </li>
-            <li class="category-item category-item-bottom">
-                <a class="category-link" href="#">
-                    <h3 class="card-title">sale</h3>
-                    <img class="category-image" src="/static/images/sale.png" alt="accessories.png">
-                </a>
-            </li>
-            <li class="category-item category-item-bottom">
-                <a class="category-link" href="#">
-                    <h3 class="card-title">apparel adults</h3>
-                    <img class="category-image" src="/static/images/apparel_adults.png" alt="accessories.png">
-                </a>
-            </li>
-        </ul>
-    </section>
-</div>
+<section class="category-products container">
+    <ul class="category-products__list">
+        @@include("category-catalog/category-product.html",{
+        "title": "apparel kids",
+        "src": "/static/images/apparel_kids.png",
+        "alt": "apparel_kids",
+        "link": "#"
+        })
+        @@include("category-catalog/category-product.html",{
+        "title": "holiday shop",
+        "src": "/static/images/holiday_shop.png",
+        "alt": "holiday_shop",
+        "link": "#"
+        })
+        @@include("category-catalog/category-product.html",{
+        "title": "toys",
+        "src": "/static/images/toys.png",
+        "alt": "toys",
+        "link": "/pages/toys/index.html"
+        })
+        @@include("category-catalog/category-product.html",{
+        "title": "accessories",
+        "src": "/static/images/accessories.png",
+        "alt": "accessories",
+        "link": "#"
+        })
+        @@include("category-catalog/category-product.html",{
+        "title": "sale",
+        "src": "/static/images/sale.png",
+        "alt": "sale",
+        "link": "#"
+        })
+        @@include("category-catalog/category-product.html",{
+        "title": "apparel adults",
+        "src": "/static/images/apparel_adults.png",
+        "alt": "apparel_adults",
+        "link": "#"
+        })
+    </ul>
+</section>

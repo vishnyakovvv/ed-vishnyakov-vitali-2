@@ -1,36 +1,65 @@
+@import "../vars";
+@import "../colors";
+
 .category-products {
-  margin-bottom: 50px;
-}
+  margin-bottom: 26px;
 
-.category-list-catalog li:nth-child(6n + 4) {
-  margin-left: 200px;
-}
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
 
-.category-list-catalog {
-  display: flex;
-  flex-wrap: wrap;
+    list-style-type: none;
 
-  list-style-type: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
 
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  text-transform: uppercase;
+    padding: 0;
 
-  padding: 0;
+    margin: 0;
+  }
+  &__list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-  margin: 0 0 50px 0;
-}
+    height: 270px;
+    margin-right: 20px;
+    margin-bottom: 23px;
 
-.category-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    cursor: pointer;
 
-  height: 270px;
-  margin-right: 20px;
-  margin-bottom: 23px;
+    &:nth-child(6n + 4) {
+      margin-left: 200px;
+    }
+  }
+  &__item-link {
+    position: relative;
+  }
 
-  cursor: pointer;
+  &__card-title {
+    color: $c_white;
+
+    font-size: 26px;
+    line-height: 32px;
+    text-align: center;
+    text-transform: uppercase;
+
+    position: absolute;
+    top: 49%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &:hover {
+      text-decoration: underline;
+
+      transition: $tr_duration $tr_easing;
+    }
+
+    &:active {
+      text-decoration: underline;
+    }
+  }
 }
 
 .category-item-bottom {

@@ -1,66 +1,46 @@
-<section class="products">
-    <div class="container">
-        <ul class="products-list">
-            <li class="products-item">
-                <a class="products-card" href="#">
-                    <img class="products-image" src="/static/images/sharky_bean.png" alt="sharky_bean.png">
-                    <div class="products-card-hover">
-                        <span class="card-hover-text">lean more</span>
-                    </div>
-                </a>
-                <h3 class="products-name">sharky bean bag chair cover</h3>
-                <span class="products-price">$60.00 USD</span>
-            </li>
-            <li class="products-item">
-                <a class="products-card" href="#">
-                    <img class="products-image" src="/static/images/brass_deco.png" alt="brass_deco.png">
-                    <div class="products-card-hover">
-                        <span class="card-hover-text">lean more</span>
-                    </div>
-                </a>
-                <h3 class="products-name">brass deco frames</h3>
-                <span class="products-price">$66.00 USD</span>
-            </li>
-            <li class="products-item">
-                <a class="products-card" href="#">
-                    <img class="products-image" src="/static/images/cibo_full.png" alt="cibo_full.png">
-                    <div class="products-card-hover">
-                        <span class="card-hover-text">lean more</span>
-                    </div>
-                </a>
-                <h3 class="products-name">cibo full apron</h3>
-                <span class="products-price">$60.00 USD</span>
-            </li>
-            <li class="products-item">
-                <a class="products-card" href="#">
-                    <img class="products-image" src="/static/images/gatcha_gatcha.png" alt="gatcha_gatcha.png">
-                    <div class="products-card-hover">
-                        <span class="card-hover-text">lean more</span>
-                    </div>
-                </a>
-                <h3 class="products-name">gatcha gatcha gumball machine</h3>
-                <span class="products-price">$56.00 USD</span>
-            </li>
-            <li class="products-item">
-                <a class="products-card" href="#">
-                    <img class="products-image" src="/static/images/christmas_advent.png" alt="christmas advent.png">
-                    <div class="products-card-hover">
-                        <span class="card-hover-text">lean more</span>
-                    </div>
-                </a>
-                <h3 class="products-name">christmas advent scented candle</h3>
-                <span class="products-price">$29.00 USD</span>
-            </li>
-            <li class="products-item">
-                <a class="products-card" href="#">
-                    <img class="products-image" src="/static/images/tangle_spinning.png" alt="tangle_spinning.png">
-                    <div class="products-card-hover">
-                        <span class="card-hover-text">lean more</span>
-                    </div>
-                </a>
-                <h3 class="products-name">tangle spinning tea light</h3>
-                <span class="products-price">$56.00 USD</span>
-            </li>
-        </ul>
-    </div>
+<section class="products container">
+    <ul class="products__list">
+        @@include("products/products-card.html",{
+        "link": "#",
+        "src": "/static/images/sharky_bean.png",
+        "alt": "sharky_bean.png",
+        "name": "sharky bean bag chair cover",
+        "price": "$60.00 USD"
+        })
+        @@include("products/products-card.html",{
+        "link": "#",
+        "src": "/static//images/brass_deco.png",
+        "alt": "brass_deco.png",
+        "name": "brass deco frames",
+        "price": "$66.00 USD"
+        })
+        @@include("products/products-card.html",{
+        "link": "#",
+        "src": "/static/images/cibo_full.png",
+        "alt": "cibo_full.png",
+        "name": "cibo full apron",
+        "price": "$60.00 USD"
+        })
+        @@include("products/products-card.html",{
+        "link": "#",
+        "src": "/static/images/gatcha_gatcha.png",
+        "alt": "gatcha_gatcha.png",
+        "name": "gatcha gatcha gumball machine",
+        "price": "$56.00 USD"
+        })
+        @@include("products/products-card.html",{
+        "link": "#",
+        "src": "/static/images/christmas_advent.png",
+        "alt": "schristmas_advent.png",
+        "name": "christmas advent scented candle",
+        "price": "$29.00 USD"
+        })
+        @@include("products/products-card.html",{
+        "link": "#",
+        "src": "/static/images/tangle_spinning.png",
+        "alt": "tangle_spinning.png",
+        "name": "tangle spinning tea light",
+        "price": "$56.00 USD"
+        })
+    </ul>
 </section>

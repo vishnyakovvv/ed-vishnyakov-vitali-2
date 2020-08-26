@@ -1,82 +1,81 @@
-.service-container {
+@import "../vars";
+@import "../colors";
+
+.service {
   display: flex;
   flex-wrap: wrap;
 
-  margin-bottom: 88px;
-}
+  margin-bottom: 91px;
 
-.service-wrapper {
-  padding: 0;
-  margin: 0;
-  display: flex;
-}
+  &__wrapper {
+    margin-left: 60px;
+  }
 
-.contanier-delivery-description {
-  margin-left: 60px;
-}
+  &__title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 38px;
+    line-height: 46px;
 
-.service-title {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 38px;
-  line-height: 46px;
+    margin: 32px 0 6px 61px;
+  }
 
-  margin: 32px 0 6px 61px;
-}
+  &__list {
+    padding: 0;
 
-.service-list {
-  padding: 0;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
 
-  margin-top: 0;
-  margin-bottom: 20px;
-}
+  &__list-item {
+    width: 326px;
 
-.service-item {
-  width: 326px;
+    list-style-type: none;
+  }
 
-  list-style-type: none;
-}
+  &__item-link {
+    font-family: "Crimson Text", serif;
+    font-size: 26px;
+    line-height: 32px;
+    color: $c_black--light;
 
-.service-item-active {
-  background-color: rgba(112, 187, 220, 0.2);
+    display: block;
+    padding: 14px 180px 9px 60px;
 
-  font-weight: 700;
-}
+    &:hover,
+    &:active {
+      background-color: $c_blue--light-extra;
 
-.service-item-link {
-  font-family: "Crimson Text", serif;
-  font-size: 26px;
-  line-height: 32px;
-  color: #1e0606;
+      font-weight: 700;
 
-  display: block;
-  padding: 14px 180px 9px 60px;
-}
+      transition: $tr_duration $tr_easing;
+    }
+  }
 
-.delivery-paragraph {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
+  &__delivery-paragraph {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
 
-  margin-left: 121px;
-  margin-bottom: 36px;
+    margin-left: 121px;
 
-  width: 470px;
+    width: 470px;
 
-  margin-left: 60px;
-}
+    margin-left: 60px;
+  }
 
-.paragraph1 {
-  margin-top: 0;
-  margin-bottom: 0;
-}
+  &__delivery-paragraph1 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 
-.paragraph2 {
-  margin-bottom: 0;
-}
+  &__delivery-paragraph2 {
+    margin-bottom: 36px;
+  }
 
-.service-link {
-  margin-left: 60px;
+  &__link {
+    margin-left: 60px;
+  }
 }
