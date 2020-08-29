@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="168" height="86" viewBox="0 0 168 86" fill="none"  xmlns:xlink="http://www.w3.org/1999/xlink"><rect id="svgEditorBackground" x="0" y="0" width="168" height="86" style="fill: none; stroke: none;"/>
+<g filter="url(#filter0_d)">
+<path d="M144.06296296296307,5.399524518518504H14.062962962962963C5.778662962962962,5.399524518518504,-0.9370370370370367,12.115258518518505,-0.9370370370370367,20.399518518518505V47.399518518518505C-0.9370370370370367,55.68381851851851,5.778662962962962,62.39951851851846,14.062962962962963,62.39951851851846H23.062962962962963L43.06296296296296,82.39951851851848L63.062962962962956,62.39951851851846H144.06296296296307C152.34696296296306,62.39951851851846,159.06296296296313,55.68381851851851,159.06296296296313,47.399518518518505V20.399518518518505C159.06296296296313,12.115258518518505,152.34696296296306,5.399524518518504,144.06296296296307,5.399524518518504Z" fill="white"/>
+
+</g>
+<defs>
+<filter id="filter0_d" x="0" y="0.781006" width="168" height="85" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+</defs>
+<text style="fill:black;font-family:Verdana;font-size:16.3px;" x="13.687044143676758" y="35.19630432128906" id="e2_texte" xml:space="preserve">Oк! Ждём ещё</text></svg>
