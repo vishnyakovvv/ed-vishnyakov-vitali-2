@@ -1,0 +1,383 @@
+.animation {
+  width: 1400px;
+
+  margin: 70px auto;
+
+  overflow: hidden;
+
+  position: relative;
+}
+
+.city {
+  width: 1585px;
+}
+
+.car_one {
+  position: absolute;
+  bottom: 260px;
+  left: -250px;
+
+  animation: car_one 6s forwards linear infinite;
+}
+
+@keyframes car_one {
+  from {
+    bottom: 260px;
+    left: -250px;
+  }
+  to {
+    bottom: 260px;
+    left: 110%;
+  }
+}
+
+.car_two {
+  position: absolute;
+  bottom: 233px;
+  left: -250px;
+  animation: car_two 7s forwards linear infinite;
+}
+
+@keyframes car_two {
+  from {
+    bottom: 260px;
+    left: -250px;
+  }
+  to {
+    bottom: 260px;
+    left: 160%;
+  }
+}
+
+.car_three {
+  position: absolute;
+  bottom: 252px;
+  left: -250px;
+  animation: car_three 10s forwards linear infinite;
+}
+
+@keyframes car_three {
+  from {
+    bottom: 260px;
+    left: -250;
+  }
+  to {
+    bottom: 260px;
+    left: 200%;
+  }
+}
+
+.car_four {
+  position: absolute;
+  bottom: 231px;
+  left: -250px;
+  animation: car_four 10s forwards linear infinite;
+}
+
+@keyframes car_four {
+  from {
+    bottom: 260px;
+    left: -250;
+  }
+  to {
+    bottom: 260px;
+    left: 100%;
+  }
+}
+
+.lantern {
+  position: absolute;
+  bottom: 45px;
+  right: 61px;
+  z-index: 1;
+}
+
+.lantern-2 {
+  position: absolute;
+  bottom: 205px;
+  right: 1px;
+}
+
+.lantern-3 {
+  position: absolute;
+  bottom: 205px;
+  left: 500px;
+}
+
+.baggage {
+  position: absolute;
+  bottom: 45px;
+  left: 270px;
+
+  z-index: 1;
+}
+
+.woman {
+  position: absolute;
+  bottom: 46px;
+  left: 280px;
+  z-index: 1;
+}
+
+.cloud_woman {
+  position: absolute;
+  bottom: 316px;
+  left: 183px;
+
+  animation: cloud_woman 15s forwards infinite;
+}
+
+@keyframes cloud_woman {
+  from {
+    bottom: 316px;
+    left: 183px;
+    opacity: 0;
+  }
+
+  5% {
+    bottom: 316px;
+    left: 183px;
+    opacity: 0;
+  }
+
+  15% {
+    bottom: 316px;
+    left: 183px;
+    opacity: 1;
+  }
+
+  20% {
+    bottom: 316px;
+    left: 183px;
+    opacity: 1;
+  }
+
+  25% {
+    bottom: 316px;
+    left: 183px;
+    opacity: 0;
+  }
+  to {
+    bottom: 316px;
+    left: 183px;
+    opacity: 0;
+  }
+}
+
+.man {
+  position: absolute;
+  bottom: 46px;
+  left: 383px;
+  z-index: 2;
+}
+
+.cloud_man-1 {
+  position: absolute;
+  bottom: 400px;
+  left: 367px;
+
+  animation: cloud_man-1 15s forwards infinite;
+}
+
+@keyframes cloud_man-1 {
+  from {
+    bottom: 400px;
+    left: 367px;
+    opacity: 0;
+  }
+
+  20% {
+    bottom: 400px;
+    left: 367px;
+    opacity: 0;
+  }
+
+  30% {
+    bottom: 400px;
+    left: 367px;
+    opacity: 1;
+  }
+
+  40% {
+    bottom: 400px;
+    left: 367px;
+    opacity: 1;
+  }
+
+  45% {
+    bottom: 400px;
+    left: 367px;
+    opacity: 0;
+  }
+  to {
+    bottom: 400px;
+    left: 367px;
+    opacity: 0;
+  }
+}
+
+.cloud_man-2 {
+  position: absolute;
+  bottom: 400px;
+  left: 367px;
+
+  animation: cloud_man-2 15s forwards infinite;
+}
+
+@keyframes cloud_man-2 {
+  from {
+    bottom: 400px;
+    left: 367px;
+    opacity: 0;
+  }
+
+  60% {
+    bottom: 400px;
+    left: 367px;
+    opacity: 0;
+  }
+
+  65% {
+    bottom: 400px;
+    left: 367px;
+    opacity: 1;
+  }
+
+  75% {
+    bottom: 400px;
+    left: 367px;
+    opacity: 1;
+  }
+
+  85% {
+    bottom: 400px;
+    left: 367px;
+    opacity: 0;
+  }
+  to {
+    bottom: 400px;
+    left: 367px;
+    opacity: 0;
+  }
+}
+
+.arm_man {
+  position: absolute;
+  bottom: 339px;
+  left: 396px;
+  z-index: 1;
+
+  animation: arm_man 15s none infinite;
+  transform-origin: bottom left;
+
+  transform: rotate(150deg);
+}
+
+@keyframes arm_man {
+  from {
+    bottom: 339px;
+    left: 396px;
+    transform: rotate(150deg);
+  }
+
+  20% {
+    bottom: 339px;
+    left: 396px;
+    transform: rotate(150deg);
+  }
+
+  30% {
+    bottom: 310px;
+    left: 383px;
+    transform: rotate(0deg);
+  }
+
+  40% {
+    bottom: 310px;
+    left: 383px;
+    transform: rotate(0deg);
+  }
+
+  50% {
+    bottom: 339px;
+    left: 396px;
+    transform: rotate(150deg);
+  }
+
+  to {
+    bottom: 339px;
+    left: 396px;
+    transform: rotate(150deg);
+  }
+}
+
+.taxi {
+  position: absolute;
+  bottom: 100px;
+  right: -888px;
+  animation: taxi 15s forwards linear infinite;
+}
+
+@keyframes taxi {
+  from {
+    bottom: 100px;
+    right: -70%;
+  }
+  40% {
+    bottom: 100px;
+    right: 10%;
+  }
+  60% {
+    bottom: 100px;
+    right: 10%;
+  }
+  to {
+    bottom: 100px;
+    right: 100%;
+  }
+}
+
+.cloud_taxi {
+  position: absolute;
+  bottom: 315px;
+  right: 545px;
+
+  animation: cloud_taxi 15s forwards infinite;
+}
+
+@keyframes cloud_taxi {
+  from {
+    bottom: 315px;
+    right: 545px;
+    opacity: 0;
+  }
+
+  40% {
+    bottom: 315px;
+    right: 545px;
+    opacity: 0;
+  }
+
+  45% {
+    bottom: 315px;
+    right: 545px;
+    opacity: 1;
+  }
+
+  55% {
+    bottom: 315px;
+    right: 545px;
+    opacity: 1;
+  }
+
+  60% {
+    bottom: 315px;
+    right: 545px;
+    opacity: 0;
+  }
+  to {
+    bottom: 315px;
+    right: 545px;
+    opacity: 0;
+  }
+}
