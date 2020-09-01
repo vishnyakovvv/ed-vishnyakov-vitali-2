@@ -3,43 +3,46 @@
 "page": "Catalog"
 })
 
-<section class="category-products container">
-    <ul class="category-products__list">
-        @@include("category-catalog/category-product.html",{
-        "title": "apparel kids",
-        "src": "/static/images/apparel_kids.png",
-        "alt": "apparel_kids",
-        "link": "#"
-        })
-        @@include("category-catalog/category-product.html",{
-        "title": "holiday shop",
-        "src": "/static/images/holiday_shop.png",
-        "alt": "holiday_shop",
-        "link": "#"
-        })
-        @@include("category-catalog/category-product.html",{
-        "title": "toys",
-        "src": "/static/images/toys.png",
-        "alt": "toys",
-        "link": "/pages/toys/index.html"
-        })
-        @@include("category-catalog/category-product.html",{
-        "title": "accessories",
-        "src": "/static/images/accessories.png",
-        "alt": "accessories",
-        "link": "#"
-        })
-        @@include("category-catalog/category-product.html",{
-        "title": "sale",
-        "src": "/static/images/sale.png",
-        "alt": "sale",
-        "link": "#"
-        })
-        @@include("category-catalog/category-product.html",{
-        "title": "apparel adults",
-        "src": "/static/images/apparel_adults.png",
-        "alt": "apparel_adults",
-        "link": "#"
-        })
-    </ul>
+<section class="category-products">
+    <div class="container">
+        <h2 class="visually-hidden">category-products</h2>
+        <ul class="category-products__list">
+            @@include("category-catalog/category-product.html",{
+            "title": "apparel kids",
+            "src": "/static/images/apparel_kids.png",
+            "alt": "apparel_kids",
+            "link": "#"
+            })
+            @@include("category-catalog/category-product.html",{
+            "title": "holiday shop",
+            "src": "/static/images/holiday_shop.png",
+            "alt": "holiday_shop",
+            "link": "#"
+            })
+            @@include("category-catalog/category-product.html",{
+            "title": "toys",
+            "src": "/static/images/toys.png",
+            "alt": "toys",
+            "link": "/pages/toys/index.html"
+            })
+            @@include("category-catalog/category-product.html",{
+            "title": "accessories",
+            "src": "/static/images/accessories.png",
+            "alt": "accessories",
+            "link": "#"
+            })
+            @@include("category-catalog/category-product.html",{
+            "title": "sale",
+            "src": "/static/images/sale.png",
+            "alt": "sale",
+            "link": "#"
+            })
+            @@include("category-catalog/category-product.html",{
+            "title": "apparel adults",
+            "src": "/static/images/apparel_adults.png",
+            "alt": "apparel_adults",
+            "link": "#"
+            })
+        </ul>
+    </div>
 </section>

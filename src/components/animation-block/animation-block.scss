@@ -134,25 +134,25 @@
     opacity: 0;
   }
 
-  5% {
+  15% {
     bottom: 316px;
     left: 183px;
     opacity: 0;
   }
 
-  15% {
-    bottom: 316px;
-    left: 183px;
-    opacity: 1;
-  }
-
-  20% {
-    bottom: 316px;
-    left: 183px;
-    opacity: 1;
-  }
-
   25% {
+    bottom: 316px;
+    left: 183px;
+    opacity: 1;
+  }
+
+  30% {
+    bottom: 316px;
+    left: 183px;
+    opacity: 1;
+  }
+
+  35% {
     bottom: 316px;
     left: 183px;
     opacity: 0;
@@ -186,16 +186,10 @@
     opacity: 0;
   }
 
-  20% {
-    bottom: 400px;
-    left: 367px;
-    opacity: 0;
-  }
-
   30% {
     bottom: 400px;
     left: 367px;
-    opacity: 1;
+    opacity: 0;
   }
 
   40% {
@@ -204,7 +198,13 @@
     opacity: 1;
   }
 
-  45% {
+  50% {
+    bottom: 400px;
+    left: 367px;
+    opacity: 1;
+  }
+
+  55% {
     bottom: 400px;
     left: 367px;
     opacity: 0;
@@ -231,16 +231,10 @@
     opacity: 0;
   }
 
-  60% {
+  70% {
     bottom: 400px;
     left: 367px;
     opacity: 0;
-  }
-
-  65% {
-    bottom: 400px;
-    left: 367px;
-    opacity: 1;
   }
 
   75% {
@@ -250,6 +244,12 @@
   }
 
   85% {
+    bottom: 400px;
+    left: 367px;
+    opacity: 1;
+  }
+
+  95% {
     bottom: 400px;
     left: 367px;
     opacity: 0;
@@ -280,16 +280,10 @@
     transform: rotate(150deg);
   }
 
-  20% {
+  30% {
     bottom: 339px;
     left: 396px;
     transform: rotate(150deg);
-  }
-
-  30% {
-    bottom: 310px;
-    left: 383px;
-    transform: rotate(0deg);
   }
 
   40% {
@@ -299,6 +293,12 @@
   }
 
   50% {
+    bottom: 310px;
+    left: 383px;
+    transform: rotate(0deg);
+  }
+
+  60% {
     bottom: 339px;
     left: 396px;
     transform: rotate(150deg);
@@ -323,11 +323,11 @@
     bottom: 100px;
     right: -70%;
   }
-  40% {
+  50% {
     bottom: 100px;
     right: 10%;
   }
-  60% {
+  70% {
     bottom: 100px;
     right: 10%;
   }
@@ -352,16 +352,10 @@
     opacity: 0;
   }
 
-  40% {
+  50% {
     bottom: 315px;
     right: 545px;
     opacity: 0;
-  }
-
-  45% {
-    bottom: 315px;
-    right: 545px;
-    opacity: 1;
   }
 
   55% {
@@ -370,7 +364,13 @@
     opacity: 1;
   }
 
-  60% {
+  65% {
+    bottom: 315px;
+    right: 545px;
+    opacity: 1;
+  }
+
+  70% {
     bottom: 315px;
     right: 545px;
     opacity: 0;

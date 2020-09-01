@@ -24,6 +24,18 @@ h3 {
   margin: 0;
 }
 
+.title-block {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 38px;
+  line-height: 46px;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+}
+
 .title__page {
   text-transform: uppercase;
 
@@ -53,7 +65,7 @@ h3 {
 
     display: inline-block;
 
-    margin-right: 22px;
+    margin-right: 19px;
 
     &:not(:last-child):after {
       content: url(/static/images/breadcrumb.svg);
