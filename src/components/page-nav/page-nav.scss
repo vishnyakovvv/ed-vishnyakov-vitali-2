@@ -2,87 +2,32 @@
 @import "../colors";
 
 .pages {
-  position: relative;
+  margin-bottom: 54px;
 
-  text-align: center;
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 
-  padding-bottom: 3px;
+    text-align: center;
+  }
 
-  margin-bottom: 60px;
+  &__row {
+    margin-top: 5px;
+  }
 
   &__page {
-    line-height: 20px;
-    padding: 0;
-    margin: 0 26px 0 36px;
-    font-size: 20px;
-  }
-
-  &__prev,
-  &__next {
-    cursor: pointer;
-
-    height: 17px;
-    width: 10px;
-
-    top: 4px;
-
-    &:before {
-      background-color: $c_black--light-2;
-      content: "";
-      height: 20px;
-      left: 4px;
-      position: absolute;
-      top: 1px;
-      transform: rotate(45deg);
-      width: 20px;
-    }
-
-    &:after {
-      background-color: $c_white;
-      content: "";
-      height: 20px;
-      left: 9px;
-      position: absolute;
-      top: 1px;
-      transform: rotate(45deg);
-      width: 20px;
-    }
-
-    &:hover::before {
-      background-color: $c_gold;
-
-      transition: $tr_duration $tr_easing;
-    }
-
-    &:active::before {
-      background-color: $c_gold;
-
-      opacity: 0.5;
-
-      transition: $tr_duration $tr_easing;
-    }
-  }
-
-  &__next {
-    float: right;
-
-    &:before {
-      left: auto;
-      right: 4px;
-    }
-
-    &:after {
-      left: auto;
-      right: 8px;
-    }
-  }
-
-  &__nomber {
     font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
     color: $c_black--light;
+
+    line-height: 20px;
+
+    padding: 0;
+
+    margin: 0 31px 0 30px;
 
     &:hover {
       color: $c_black--light;
@@ -98,5 +43,29 @@
 
       transition: $tr_duration $tr_easing;
     }
+  }
+
+  &__prev,
+  &__next {
+    background-color: $c_white;
+
+    padding: 0;
+
+    cursor: pointer;
+  }
+
+  a svg:hover #prev,
+  a svg:hover #next {
+    stroke: $c_gold;
+
+    transition: $tr_duration $tr_easing;
+  }
+
+  a svg:active #prev,
+  a svg:active #next {
+    stroke: $c_gold;
+    opacity: 0.5;
+
+    transition: $tr_duration $tr_easing;
   }
 }

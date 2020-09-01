@@ -2,7 +2,7 @@
 @import "../colors";
 
 .slideshow {
-  padding-top: 91px;
+  padding-top: 88px;
   margin-bottom: 91px;
 
   &__list {
@@ -20,7 +20,7 @@
   &__image {
     position: absolute;
     left: 445px;
-    top: -90px;
+    top: -89px;
 
     z-index: 2;
   }
@@ -45,7 +45,7 @@
     color: $c_black--light;
     opacity: 0.05;
     font-weight: 400;
-    margin-bottom: 13px;
+    margin-bottom: 15px;
   }
 
   &__strips-list {
@@ -75,7 +75,7 @@
 
   &__content-wrapper {
     padding-left: 133px;
-    padding-top: 90px;
+    padding-top: 92px;
   }
 
   &__slide-title {
@@ -85,7 +85,7 @@
     font-size: 40px;
     line-height: 44px;
 
-    margin-bottom: 17px;
+    margin-bottom: 18px;
     margin-top: 0;
 
     width: 400px;
