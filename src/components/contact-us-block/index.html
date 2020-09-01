@@ -1,0 +1,48 @@
+@@include('breadcrumbs-title/index.html', {
+"title": "contact us",
+"page": "Contact Us"
+})
+
+
+<section class="contact-us">
+    <div class="container">
+        <h2 class="visually-hidden">contact us</h2>
+        <div class="contact-us__wrapper">
+            <form class="contact-us__form" action="/index.html">
+                <label class="contact-us__form-lable">
+                    <input class="contact-us__form-input" type="text" name="name">
+                    <span class="contact-us__form-text">Name</span>
+                </label>
+                <div class="contact-us__form-feedback">
+                    <label class="contact-us__form-phone-input contact-us__form-lable">
+                        <input class="contact-us__form-input" type="tel" name="phone">
+                        <span class="contact-us__form-text">Phone</span>
+                    </label>
+                    <label class="contact-us__form-email-input contact-us__form-lable">
+                        <input class="contact-us__form-input" type="email" name="email">
+                        <span class="contact-us__form-text">Email</span>
+                    </label>
+                </div>
+                <label class="contact-us__form-lable">
+                    <textarea class="contact-us__form-message" name="message" cols="30" rows="10"></textarea>
+                    <span class="contact-us__form-text">Message</span>
+                </label>
+                <label class="contact-us__form-subscribe">
+                    <input class="contact-us__form-subscribe-checkbox" type="checkbox" name="subscribe" value="personal data">
+                    <span class="contact-us__form-subscribe-fake"></span>
+                    <span class="contact-us__form-subscribe-text">By clicking on the button, you consent to the processing of
+                        your personal data</span>
+                </label>
+                <button class="contact-us__form-button button" type="submit">submit</button>
+            </form>
+            <div class="contact-us__text-wrapper">
+                <p class="contact-us__text-paragraph">Our support team are on-hand to assist with any issues you are
+                    experiencing.
+                </p>
+                <p class="contact-us__text-paragraph">Please use the form to contact us with your needs. Send us a message and
+                    we'll respond as soon as possible.</p>
+                <p class="contact-us__text-paragraph-waiting">An expert is waiting to help you!</p>
+            </div>
+        </div>
+    </div>
+</section>

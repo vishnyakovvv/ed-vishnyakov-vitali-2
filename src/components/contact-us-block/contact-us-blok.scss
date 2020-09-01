@@ -1,10 +1,12 @@
 @import "../vars";
 @import "../colors";
 
-.conact-us {
-  display: flex;
-
+.contact-us {
   margin-bottom: 60px;
+
+  &__wrapper {
+    display: flex;
+  }
 
   &__form {
     display: flex;
@@ -175,10 +177,10 @@
       align-self: start;
     }
   }
-}
-.contact-us__text-wrapper {
-  margin-left: 120px;
 
+  &__text-wrapper {
+    margin-left: 120px;
+  }
   &__text-paragraph {
     font-family: "Open Sans", sans-serif;
     font-style: normal;
