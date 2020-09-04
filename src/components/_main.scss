@@ -1,11 +1,16 @@
 @import "./vars";
 @import "./colors";
+@import "./mixins";
 
 .container {
   min-height: 100%;
   width: 1180px;
   margin: 0 auto;
   padding: 0 110px;
+
+  @include media_interval(0, $media_tablet) {
+    padding: 0 60px;
+  }
 }
 
 a {
@@ -34,6 +39,9 @@ h3 {
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 .title__page {
