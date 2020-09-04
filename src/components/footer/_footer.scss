@@ -1,14 +1,11 @@
 @import "../vars";
 @import "../colors";
+@import "../mixins";
 
 .footer {
   min-width: 1400px;
 
   background-color: $c_gray--dark-extra;
-
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 
   &__title {
     font-family: "Open Sans", sans-serif;
@@ -40,18 +37,23 @@
     margin: 0;
   }
 
-  &__content {
+  &__wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
     padding: 101px 0;
   }
+
+  &__main {
+    display: flex;
+    justify-content: space-between;
+  }
   // navigation
 
   &__navigation {
     margin-right: 20px;
-    width: 380px;
+    min-width: 380px;
   }
   &__navigation-list {
     font-family: "Open Sans", sans-serif;
@@ -91,7 +93,7 @@
 
   &__customer {
     margin-right: 20px;
-    width: 380px;
+    min-width: 380px;
   }
 
   &__customer-list {
@@ -110,7 +112,7 @@
   // connect
 
   &__connect {
-    width: 380px;
+    min-width: 380px;
   }
   &__connect-email {
     margin-top: 25px;
@@ -131,7 +133,7 @@
     line-height: 22px;
     background-color: $c_white;
 
-    width: 299px;
+    width: 282px;
 
     background-color: $c_gray--dark;
 
