@@ -4,12 +4,20 @@
 
 .container {
   min-height: 100%;
-  width: 1180px;
+  max-width: 1180px;
   margin: 0 auto;
-  padding: 0 110px;
+  padding: 0 10px;
 
-  @include media_interval(0, $media_tablet) {
+  @include media_interval($media_tablet, $media_laptop) {
+    padding: 0 40px;
+  }
+
+  @include media_interval($media_mobile-medium, $media_tablet) {
     padding: 0 60px;
+  }
+
+  @include media_interval(0, $media_mobile-medium) {
+    padding: 0;
   }
 }
 
@@ -27,6 +35,17 @@ body {
 
 h3 {
   margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style-type: none;
+
+  margin: 0;
+  padding: 0;
 }
 
 .title-block {
@@ -51,7 +70,7 @@ h3 {
   font-size: 40px;
   line-height: 44px;
 
-  margin-top: 59px;
+  margin-top: 22px;
   margin-bottom: 18px;
 }
 
@@ -136,5 +155,12 @@ h3 {
     background-color: $c_gold--light;
 
     outline: none;
+  }
+
+  @include media_interval(0, $media_mobile) {
+    padding: 8px 20px;
+
+    font-size: 14px;
+    line-height: 19px;
   }
 }
