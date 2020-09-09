@@ -3,7 +3,6 @@
         <h2 class="visually-hidden">poster</h2>
         <ul class="slideshow__list">
             <li class="slideshow__list-item">
-                <img class="slideshow__image" src="/static/images/myslides-01.png" alt="the ooh noo collectiom">
                 <div class="slideshow__wrapper">
                     <div class="slideshow__number-strips">
                         <div class="slideshow__number">01</div>
@@ -19,6 +18,13 @@
                         <p class="slideshow__slide-text">Designed in Slovenia</p>
                         <a class="link button-open_js" href="#">explore now</a>
                     </div>
+                    <picture class="slideshow__picture">
+                        <source srcset="/static/images/myslides-01.png, /static/images/myslides-01_retina.png 2x" media="(min-width: 1024px)">
+                        <source srcset="/static/images/myslides-01_tablet.png" media="(min-width: 768px) and (max-width: 1023px)">
+                        <source srcset="/static/images/myslides-01_mobile.png" media="(max-width: 767px)">
+                        <img class="slideshow__image" src="/static/images/myslides-01.png" alt="the ooh noo collectiom">
+                    </picture>
+
                     <div class="slideshow__bottom-info">
                         <p class="slideshow__bottom-text"> free (continental) USA shipping on all orders of $100 USD or
                             more!

@@ -4,13 +4,34 @@
 .service {
   margin-bottom: 86px;
 
+  @include media_interval($media_mobile, $media_laptop) {
+    margin-bottom: 57px;
+  }
+
+  @include media_interval(0, $media_mobile) {
+    margin-bottom: 69px;
+  }
+
   &__wrapper {
     display: flex;
-    flex-wrap: wrap;
+
+    @include media_interval(0, $media_mobile) {
+      flex-wrap: wrap;
+
+      padding: 0 20px;
+    }
   }
 
   &__block {
     margin-left: 60px;
+
+    @include media_interval($media_mobile, $media_laptop) {
+      margin-left: 0;
+    }
+
+    @include media_interval(0, $media_mobile) {
+      margin: 17px 0px;
+    }
   }
 
   &__title {
@@ -21,6 +42,20 @@
     line-height: 46px;
 
     margin: 31px 0 6px 61px;
+
+    @include media_interval($media_mobile, $media_tablet) {
+      font-size: 36px;
+      line-height: 44px;
+
+      margin: 29px 0 6px 56px;
+    }
+
+    @include media_interval(0, $media_mobile) {
+      font-size: 24px;
+      line-height: 29px;
+
+      margin: 0px 0 31px;
+    }
   }
 
   &__list {
@@ -28,10 +63,18 @@
 
     margin-top: 0;
     margin-bottom: 22px;
+
+    @include media_interval($media_mobile, $media_tablet) {
+      margin-bottom: 15px;
+    }
+
+    @include media_interval(0, $media_mobile) {
+      margin-bottom: 20px;
+    }
   }
 
   &__list-item {
-    width: 326px;
+    max-width: 326px;
 
     list-style-type: none;
   }
@@ -53,6 +96,22 @@
 
       transition: $tr_duration $tr_easing;
     }
+
+    @include media_interval($media_mobile, $media_tablet) {
+      font-size: 24px;
+      line-height: 30px;
+
+      padding: 10px 180px 5px 56px;
+    }
+
+    @include media_interval(0, $media_mobile) {
+      font-size: 24px;
+      line-height: 29px;
+
+      padding: 0;
+
+      margin-bottom: 16px;
+    }
   }
 
   &__delivery-paragraph {
@@ -63,21 +122,60 @@
 
     margin-left: 121px;
 
-    width: 470px;
+    max-width: 470px;
 
     margin-left: 60px;
+
+    @include media_interval($media_mobile, $media_tablet) {
+      font-size: 14px;
+      line-height: 19px;
+
+      max-width: 300px;
+
+      margin-left: 56px;
+    }
+
+    @include media_interval(0, $media_mobile) {
+      font-size: 14px;
+      line-height: 19px;
+
+      margin: 0;
+    }
   }
 
   &__delivery-paragraph1 {
-    margin-top: 0;
     margin-bottom: 0;
+
+    @include media_interval($media_mobile, $media_tablet) {
+      margin-bottom: 18px;
+    }
+
+    @include media_interval(0, $media_mobile) {
+      margin-bottom: 15px;
+    }
   }
 
   &__delivery-paragraph2 {
     margin-bottom: 37px;
+
+    @include media_interval($media_mobile, $media_tablet) {
+      margin-bottom: 33px;
+    }
+
+    @include media_interval(0, $media_mobile) {
+      margin-bottom: 33px;
+    }
   }
 
   &__link {
-    margin-left: 60px;
+    margin-left: 59px;
+
+    @include media_interval($media_mobile, $media_tablet) {
+      margin-left: 56px;
+    }
+
+    @include media_interval(0, $media_mobile) {
+      margin: 0;
+    }
   }
 }

@@ -42,6 +42,14 @@
     justify-content: space-between;
 
     padding: 101px 0;
+
+    @include media_interval($media_mobile, $media_tablet) {
+      padding: 80px 0;
+    }
+
+    @include media_interval(0, $media_mobile) {
+      padding: 70px 20px;
+    }
   }
 
   &__main {
@@ -49,12 +57,29 @@
     justify-content: space-between;
 
     width: 100%;
+
+    @include media_interval($media_mobile, $media_tablet) {
+      margin-bottom: 13px;
+    }
+
+    @include media_interval(0, $media_mobile) {
+      flex-wrap: wrap;
+    }
   }
   // navigation
 
   &__navigation {
     margin-right: 20px;
     width: 100%;
+
+    @include media_interval(0, $media_mobile) {
+      margin: 0;
+    }
+    &-title {
+      @include media_interval(0, $media_mobile) {
+        margin-bottom: 20px;
+      }
+    }
   }
   &__navigation-list {
     font-family: "Open Sans", sans-serif;
@@ -65,9 +90,27 @@
 
     margin-top: 28px;
     margin-bottom: 28px;
+
+    @include media_interval(0, $media_mobile) {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      font-size: 14px;
+      line-height: 19px;
+
+      margin-top: 21px;
+    }
   }
   &__navigation-item {
     margin-bottom: 19px;
+
+    @include media_interval(0, $media_mobile) {
+      width: 140px;
+
+      margin-bottom: 16px;
+      margin-right: 22px;
+    }
 
     &:hover {
       color: $c_white;
@@ -95,6 +138,15 @@
   &__customer {
     margin-right: 20px;
     width: 100%;
+
+    @include media_interval(0, $media_mobile) {
+      margin: 0;
+    }
+    &-title {
+      @include media_interval(0, $media_mobile) {
+        margin-bottom: 19px;
+      }
+    }
   }
 
   &__customer-list {
@@ -108,18 +160,41 @@
     padding: 0;
 
     color: $c_white;
+
+    @include media_interval(0, $media_mobile) {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      font-size: 14px;
+      line-height: 19px;
+
+      margin-top: 20px;
+      margin-bottom: 46px;
+    }
   }
 
   // connect
 
   &__connect {
     width: 100%;
+
+    &-title {
+      @include media_interval(0, $media_mobile) {
+        margin-bottom: 24px;
+      }
+    }
   }
   &__connect-email {
     margin-top: 25px;
     margin-bottom: 25px;
 
     height: 40px;
+
+    @include media_interval(0, $media_mobile) {
+      margin-top: 24px;
+      margin-bottom: 17px;
+    }
   }
 
   &__connect-form {
@@ -134,7 +209,7 @@
     line-height: 22px;
     background-color: $c_white;
 
-    width: 282px;
+    width: 100%;
 
     background-color: $c_gray--dark;
 
@@ -164,18 +239,24 @@
     }
   }
 
-  // connect
-
   &__connect-networks {
     display: flex;
 
     list-style-type: none;
 
     padding: 0;
+
+    @include media_interval(0, $media_mobile) {
+      margin-bottom: 55px;
+    }
   }
 
   &__networks-circle {
     margin-right: 10px;
+
+    @include media_interval(0, $media_mobile) {
+      margin-right: 12px;
+    }
   }
 
   &__social-link {
@@ -194,8 +275,6 @@
 
   &__row-bottom {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     font-family: "Open Sans", sans-serif;
     text-transform: capitalize;
     color: $c_white;
@@ -206,6 +285,15 @@
     width: 100%;
 
     margin-top: 24px;
+
+    @include media_interval($media_mobile, $media_tablet) {
+      flex-wrap: wrap;
+      justify-content: left;
+    }
+
+    @include media_interval(0, $media_mobile) {
+      flex-wrap: wrap;
+    }
   }
 
   &__row-rating {
@@ -217,7 +305,15 @@
 
     margin-right: 20px;
 
-    width: 380px;
+    width: 100%;
+
+    @include media_interval($media_mobile, $media_tablet) {
+      margin-bottom: 15px;
+    }
+
+    @include media_interval(0, $media_mobile) {
+      margin-bottom: 16px;
+    }
 
     &:hover {
       color: $c_gold;
@@ -261,24 +357,39 @@
   }
 
   &__row-copyright {
-    width: 380px;
+    width: 100%;
 
     margin-right: 20px;
+
+    @include media_interval($media_mobile, $media_tablet) {
+      margin-right: 34px;
+      max-width: 300px;
+    }
+
+    @include media_interval(0, $media_mobile) {
+      margin-bottom: 14px;
+    }
   }
 
   &__row-webdesign {
-    width: 380px;
+    width: 100%;
 
-    color: $c_gray--light;
+    @include media_interval($media_mobile, $media_tablet) {
+      max-width: 300px;
+    }
 
-    cursor: pointer;
-    &:hover,
-    &:active {
-      color: $c_white;
+    &--wrapper {
+      color: $c_gray--light;
 
-      text-decoration: underline;
+      cursor: pointer;
+      &:hover,
+      &:active {
+        color: $c_white;
 
-      transition: $tr_duration $tr_easing;
+        text-decoration: underline;
+
+        transition: $tr_duration $tr_easing;
+      }
     }
   }
 }

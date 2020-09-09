@@ -1,13 +1,24 @@
 @import "../vars";
 @import "../colors";
+@import "../mixins";
 
 .slideshow {
   padding-top: 88px;
   margin-bottom: 91px;
 
-  &__list {
-    position: relative;
+  @include media_interval($media_mobile, $media_tablet) {
+    margin: 0 0 60px 0;
 
+    padding-top: 0;
+  }
+
+  @include media_interval(0, $media_mobile) {
+    margin: 0 0 80px 0;
+
+    padding-top: 0;
+  }
+
+  &__list {
     list-style: none;
 
     padding: 0;
@@ -19,16 +30,23 @@
 
   &__image {
     position: absolute;
-    left: 445px;
-    top: -89px;
+    right: 99px;
+    bottom: 38px;
 
-    z-index: 2;
+    @include media_interval($media_mobile, $media_laptop) {
+      right: 8px;
+    }
+
+    @include media_interval(0, $media_mobile) {
+      right: 0;
+      bottom: 54px;
+    }
   }
 
   &__wrapper {
     position: relative;
 
-    max-width: 1180px;
+    width: 100%;
 
     background-color: $c_gold--light-extra;
   }
@@ -37,6 +55,17 @@
     position: absolute;
     left: 28px;
     top: 17px;
+
+    @include media_interval($media_mobile, $media_tablet) {
+      left: 0;
+      top: 17px;
+    }
+
+    @include media_interval(0, $media_mobile) {
+      left: auto;
+      right: 20px;
+      top: 21px;
+    }
   }
 
   &__number {
@@ -46,6 +75,16 @@
     opacity: 0.05;
     font-weight: 400;
     margin-bottom: 15px;
+
+    @include media_interval($media_mobile, $media_tablet) {
+      font-size: 48px;
+      margin-bottom: 7px;
+    }
+
+    @include media_interval(0, $media_mobile) {
+      font-size: 48px;
+      margin-bottom: 11px;
+    }
   }
 
   &__strips-list {
@@ -71,11 +110,41 @@
 
       transition: $tr_duration $tr_easing;
     }
+    @include media_interval($media_mobile, $media_tablet) {
+      width: 27px;
+      height: 2.67px;
+
+      margin: 0 0 9.78px 0;
+    }
+
+    @include media_interval(0, $media_mobile) {
+      width: 27px;
+      height: 2.67px;
+
+      margin: 0 0 9.78px 22px;
+    }
   }
 
   &__content-wrapper {
-    padding-left: 133px;
-    padding-top: 92px;
+    padding: 92px 0 0 133px;
+
+    @include media_interval($media_tablet, $media_laptop) {
+      padding-left: 90px;
+    }
+
+    @include media_interval($media_mobile, $media_tablet) {
+      padding: 78px 0 0 60px;
+    }
+
+    @include media_interval($media_mobile-extra-small, $media_mobile) {
+      padding: 84px 0 0 20px;
+      margin-bottom: 197px;
+    }
+
+    @include media_interval(0, $media_mobile-extra-small) {
+      padding: 42px 0 0 20px;
+      margin-bottom: 198px;
+    }
   }
 
   &__slide-title {
@@ -85,10 +154,24 @@
     font-size: 40px;
     line-height: 44px;
 
-    margin-bottom: 18px;
-    margin-top: 0;
+    max-width: 307px;
 
-    width: 400px;
+    margin-bottom: 18px;
+
+    @include media_interval($media_mobile-extra-small, $media_mobile) {
+      font-size: 36px;
+      line-height: 39px;
+
+      margin-bottom: 16px;
+    }
+
+    @include media_interval(0, $media_mobile-extra-small) {
+      font-size: 36px;
+      line-height: 39px;
+
+      margin-bottom: 16px;
+      margin-top: 43px;
+    }
   }
 
   &__slide-text {
@@ -98,10 +181,27 @@
 
     margin-bottom: 29px;
     margin-top: 0;
+
+    margin: 0 0 29px 0;
+
+    @include media_interval(0, $media_mobile) {
+      font-size: 18px;
+      line-height: 22px;
+
+      margin-bottom: 23px;
+    }
   }
 
   &__bottom-info {
     margin-top: 99px;
+
+    @include media_interval($media_tablet, $media_laptop) {
+      margin-top: 110px;
+    }
+
+    @include media_interval($media_mobile, $media_tablet) {
+      margin-top: 112px;
+    }
   }
 
   &__bottom-text {
@@ -114,10 +214,14 @@
 
     background-color: $c_gold;
 
-    padding: 11px 364px;
+    padding: 11px 0;
 
     margin: 0;
 
     text-align: center;
+
+    @include media_interval(0, $media_mobile) {
+      padding: 11px 12px;
+    }
   }
 }

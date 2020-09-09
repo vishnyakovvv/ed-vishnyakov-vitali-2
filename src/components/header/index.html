@@ -1,8 +1,8 @@
 <header class="header">
   <div class="container">
     <div class="header__wrapper">
-      <a class="header__link" href="/index.html">
-        <img class="header__logo" src="/static/images/logo.svg" alt="logo">
+      <a class="header__logo" href="/index.html">
+        <img class="header__logo-img" src="/static/images/logo.svg" alt="logo">
       </a>
       <nav class="header__nav">
         <ul class="header__nav-list">
@@ -14,16 +14,17 @@
           <li class="header__nav-item"><a class="header__nav-link" href="/pages/grid/index.html">grid</a>
           </li>
         </ul>
-        <ul class="header__nav-list">
-          <li class="header__nav-item--SEARCH">
-            <a class="header__search" href="#"><img src="/static/images/search.png" alt="search"></a>
-          </li>
-          <li class="header__nav-item header__contactus"><a class="header__nav-link" href="/pages/contact-us/index.html"><span class="header__text-contactus">contact us</span>
-            </a>
-          </li>
-          </li>
-        </ul>
       </nav>
+      <button class="open-menu open-mobile-menu_js">Menu</button>
+      <button class="close-menu"></button>
+      <ul class="header__nav-info">
+        <li class="header__nav-info--SEARCH">
+          <button class="header__search"><img class="header__search-img" src="/static/images/search.png" alt="search"></button>
+        </li>
+        <li class="header__nav-info--CONTACTS">
+          <a class="header__nav-info--LINK" href="/pages/contact-us/index.html">contact us</a>
+        </li>
+      </ul>
     </div>
   </div>
 </header>

@@ -1,0 +1,88 @@
+@import "../mixins";
+@import "../colors";
+@import "../vars";
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  display: none;
+
+  background-color: $c_purple;
+
+  &__wrapper {
+    background-color: $c_white;
+
+    padding: 25px 30px;
+  }
+
+  &__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 49px;
+  }
+
+  &__logo {
+    &--img {
+      width: 42px;
+      height: 22px;
+    }
+  }
+
+  &__close {
+    margin-right: 26px;
+
+    &--button {
+      border: none;
+      background-color: $c_white;
+
+      cursor: pointer;
+
+      outline: none;
+    }
+  }
+
+  &__search {
+    &--button {
+      border: none;
+      background-color: $c_white;
+
+      padding: 0;
+
+      cursor: pointer;
+
+      outline: none;
+    }
+
+    &--img {
+      width: 13px;
+      height: 13px;
+    }
+  }
+
+  &__list {
+    text-align: center;
+
+    &-item {
+      font-family: "Open Sans", sans-serif;
+      text-transform: uppercase;
+
+      margin-bottom: 24px;
+
+      &--BOLD {
+        margin-top: 10px;
+        margin-bottom: 0;
+        font-weight: bold;
+      }
+    }
+
+    &-link {
+      color: $c_black;
+    }
+  }
+}
