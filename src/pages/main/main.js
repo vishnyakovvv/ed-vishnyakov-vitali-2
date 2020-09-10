@@ -23,13 +23,13 @@ window.addEventListener("keydown", function (e) {
 
 // mobile menu
 
-var buttonOpenMenu = document.querySelector(".open-mobile-menu_js"),
-  buttonCloseMenu = document.querySelector(".close-mobile-menu_js");
+var buttonOpenMenu = document.getElementById("js-button-open-menu"),
+  buttonCloseMenu = document.getElementById("js-button-close-menu");
 
 buttonOpenMenu.addEventListener("click", function () {
-  mobile.classList.add("mobile-menu__open");
+  mobile.classList.add("mobile-menu-open");
 });
 
 buttonCloseMenu.addEventListener("click", function () {
-  mobile.classList.remove("mobile-menu__close");
+  mobile.classList.remove("mobile-menu-open");
 });

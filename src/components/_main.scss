@@ -6,10 +6,10 @@
   min-height: 100%;
   max-width: 1180px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 110px;
 
   @include media_interval($media_tablet, $media_laptop) {
-    padding: 0 40px;
+    padding: 0 60px;
   }
 
   @include media_interval($media_mobile-medium, $media_tablet) {
@@ -17,7 +17,7 @@
   }
 
   @include media_interval(0, $media_mobile-medium) {
-    padding: 0;
+    padding: 0 20px;
   }
 }
 

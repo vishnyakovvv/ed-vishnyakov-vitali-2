@@ -9,7 +9,7 @@
   }
 
   @include media_interval(0, $media_mobile) {
-    margin: 0 25px 61px;
+    margin-bottom: 60px;
   }
 
   &__list {
@@ -31,8 +31,6 @@
         text-align: center;
       }
 
-      transition: $tr_duration $tr_easing;
-
       &:hover {
         opacity: 55%;
       }
@@ -45,6 +43,10 @@
       @include media_interval(0, $media_mobile) {
         margin: 0 auto;
       }
+    }
+
+    &-link {
+      transition: $tr_duration $tr_easing;
     }
   }
 }

@@ -2,6 +2,10 @@
 @import "../colors";
 @import "../vars";
 
+.mobile-menu-open {
+  display: block;
+}
+
 .mobile-menu {
   position: fixed;
   top: 0;

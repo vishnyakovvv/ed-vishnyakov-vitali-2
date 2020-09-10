@@ -35,7 +35,7 @@
     }
 
     @include media_interval(0, $media_mobile) {
-      margin: 0 0 49px;
+      margin: 0 -20px 49px;
 
       padding: 10px 20px 34px 20px;
     }
@@ -131,6 +131,7 @@
     }
 
     @include media_interval(0, $media_mobile) {
+      margin: 0 -20px;
       padding: 11px 20px 98px 20px;
     }
 

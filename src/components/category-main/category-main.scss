@@ -10,7 +10,6 @@
 
   @include media_interval(0, $media_mobile) {
     margin: 81px 0;
-    padding: 0 20px;
   }
 
   &__title {
@@ -33,22 +32,16 @@
   }
 
   &__wrapper-list {
-    margin: 0 0 29px;
+    margin: 0 -40px 29px 0;
 
-    @include media_interval($media_tablet, $media_laptop) {
-      overflow-x: scroll;
-    }
+    overflow-x: scroll;
 
-    @include media_interval($media_mobile, $media_tablet) {
-      overflow-x: scroll;
-
-      margin: 0 0 20px;
+    @include media_interval($media_mobile, $media_laptop) {
+      margin: 0 -60px 20px 0;
     }
 
     @include media_interval(0, $media_mobile) {
-      overflow-x: scroll;
-
-      margin: 0 0 17px;
+      margin: 0 -20px 17px 0;
     }
   }
 
