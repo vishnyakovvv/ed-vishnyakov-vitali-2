@@ -2,7 +2,7 @@
 @import "../colors";
 
 .category-products {
-  margin-bottom: 26px;
+  // margin-bottom: 26px;
 
   &__list {
     display: flex;
@@ -23,18 +23,47 @@
     justify-content: center;
     align-items: center;
 
-    height: 270px;
     margin-right: 20px;
-    margin-bottom: 23px;
+    margin-bottom: 20px;
 
     cursor: pointer;
 
-    &:nth-child(6n + 4) {
-      margin-left: 200px;
+    @include media_interval($media_laptop, $media_4k) {
+      &:nth-child(6n + 4) {
+        margin-left: 200px;
+      }
+      &:nth-child(6n + 3) {
+        margin-right: 100px;
+      }
+    }
+
+    @include media_interval($media_mobile, $media_tablet) {
+      &:nth-child(3n + 3) {
+        margin-right: 0;
+      }
+      margin-bottom: 16px;
+    }
+
+    @include media_interval(0, $media_mobile) {
+      &:nth-child(2n + 2) {
+        margin-right: 0;
+      }
+      margin-right: 16px;
+      margin-bottom: 11px;
     }
   }
   &__item-link {
     position: relative;
+
+    max-width: 280px;
+
+    @include media_interval($media_mobile, $media_tablet) {
+      max-width: 203px;
+    }
+
+    @include media_interval(0, $media_mobile) {
+      max-width: 160px;
+    }
   }
 
   &__card-title {
@@ -46,9 +75,19 @@
     text-transform: uppercase;
 
     position: absolute;
-    top: 49%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    @include media_interval($media_mobile, $media_tablet) {
+      font-size: 24px;
+      line-height: 29px;
+    }
+
+    @include media_interval(0, $media_mobile) {
+      font-size: 18px;
+      line-height: 22px;
+    }
 
     &:hover {
       text-decoration: underline;

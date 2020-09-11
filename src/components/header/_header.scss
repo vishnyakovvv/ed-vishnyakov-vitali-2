@@ -9,7 +9,7 @@
   }
 
   @include media_interval(0, $media_mobile) {
-    padding: 25px 0;
+    padding: 25px 15px 21px 10px;
   }
 
   &__wrapper {
@@ -224,7 +224,7 @@
     }
 
     @include media_interval($media_mobile-extra-small, $media_mobile-medium) {
-      margin-right: 67px;
+      margin: 0 73px 5px 0;
       line-height: 15px;
     }
 
@@ -293,10 +293,6 @@
     &:active {
       opacity: 0.2;
     }
-
-    // @include media($m_mob--md, $m_tab) {
-    //   margin: -5px 43px 0 0;
-    // }
 
     &_active {
       display: block;

@@ -16,6 +16,18 @@
 
   z-index: 2;
 
+  @include media_interval($media_tablet, $media_laptop) {
+    padding: 0 60px;
+  }
+
+  @include media_interval($media_mobile-medium, $media_tablet) {
+    padding: 0 60px;
+  }
+
+  @include media_interval(0, $media_mobile-medium) {
+    padding: 0 20px;
+  }
+
   &_open {
     display: flex;
   }
@@ -32,15 +44,27 @@
 
     width: 680px;
 
-    margin: auto;
-
     position: relative;
+
+    @include media_interval($media_mobile, $media_tablet) {
+      width: 648px;
+
+      padding: 42px 56px;
+    }
+
+    @include media_interval(0, $media_mobile) {
+      padding: 25px 24px;
+    }
 
     &-lable {
       display: flex;
       flex-direction: column-reverse;
 
       margin-bottom: 19px;
+
+      @include media_interval(0, $media_mobile) {
+        margin-bottom: 14px;
+      }
     }
 
     &-input {
@@ -53,6 +77,11 @@
       border: 1px solid $c_black--opacity-0-2;
 
       padding: 14px 19px;
+
+      @include media_interval(0, $media_mobile) {
+        padding: 8px 15px;
+      }
+
       &:hover {
         border: 1px solid $c_black--opacity-0-3;
 
@@ -83,21 +112,33 @@
     &-feedback {
       display: flex;
       justify-content: space-between;
+
+      @include media_interval(0, $media_mobile) {
+        flex-wrap: wrap;
+      }
     }
 
     &-phone-input {
       margin-right: 10px;
-      width: 600px;
+      width: 100%;
+
+      @include media_interval(0, $media_mobile) {
+        margin: 0px 0px 17px;
+      }
     }
 
     &-email-input {
       margin-left: 10px;
-      width: 600px;
+      width: 100%;
+
+      @include media_interval(0, $media_mobile) {
+        margin: 0px 0 14px;
+      }
     }
 
     &-message {
       box-sizing: border-box;
-      width: 600px;
+      width: 100%;
       height: 150px;
 
       border: 1px solid $c_black--opacity-0-2;
@@ -121,12 +162,17 @@
 
     &-subscribe {
       margin-bottom: 18px;
+
+      @include media_interval(0, $media_mobile) {
+        display: flex;
+        margin-bottom: 18px;
+      }
     }
 
     &-subscribe-checkbox {
       display: none;
 
-      &:checked + .modal-bg__form-subscribe-fake::before {
+      &:checked + .conact-us__form-subscribe-fake::before {
         opacity: 1;
       }
     }
@@ -142,6 +188,13 @@
       border-radius: 3px;
 
       position: relative;
+
+      @include media_interval(0, $media_mobile) {
+        width: 29px;
+        height: 17px;
+
+        margin-right: 13px;
+      }
 
       &::before {
         content: "";
@@ -184,6 +237,10 @@
 
       cursor: pointer;
 
+      @include media_interval(0, $media_mobile) {
+        padding: 0;
+      }
+
       &:hover {
         text-decoration: underline;
       }
@@ -192,30 +249,35 @@
     &-button {
       align-self: start;
     }
-    &-close {
-      position: absolute;
-      top: 0;
-      right: -25px;
-      cursor: pointer;
+  }
 
-      width: 15px;
-      height: 15px;
+  &-button {
+    align-self: start;
+  }
 
-      border: none;
+  &__form-close {
+    position: absolute;
+    top: 0;
+    right: -25px;
+    cursor: pointer;
 
-      background: url(/static/images/exit.svg);
+    width: 15px;
+    height: 15px;
 
-      &:hover {
-        color: $c_white;
-        opacity: 0.5;
-      }
-      &:active {
-        color: $c_white;
-        opacity: 0.3;
-      }
-      &:focus {
-        outline: none;
-      }
+    border: none;
+
+    background: url(/static/images/exit.svg);
+
+    &:hover {
+      color: $c_white;
+      opacity: 0.5;
+    }
+    &:active {
+      color: $c_white;
+      opacity: 0.3;
+    }
+    &:focus {
+      outline: none;
     }
   }
 }

@@ -1,6 +1,11 @@
 <li class="products__list-item">
     <a class="products__item-link" href="@@link">
-        <img class="products__img" src="@@src" alt="@@alt">
+        <picture class="products__picture">
+            <source srcset="/static/images/products-card-@@src.png, /static/images/products-card-@@src_retina.png 2x" media="(min-width: 1024px)">
+            <source srcset="/static/images/products-card-@@src_tablet.png" media="(min-width: 768px) and (max-width: 1023px)">
+            <source srcset="/static/images/products-card-@@src_mobile.png" media="(max-width: 767px)">
+            <img class="products__image" srcset="/static/images/products-card-@@src.png" alt="@@alt">
+        </picture>
         <div class="products__card-hover">
             <span class="products__hover-text">lean more</span>
         </div>

@@ -2,10 +2,6 @@
 @import "../colors";
 @import "../vars";
 
-.mobile-menu-open {
-  display: block;
-}
-
 .mobile-menu {
   position: fixed;
   top: 0;
@@ -16,6 +12,10 @@
   display: none;
 
   background-color: $c_purple;
+
+  &__open {
+    display: block;
+  }
 
   &__wrapper {
     background-color: $c_white;

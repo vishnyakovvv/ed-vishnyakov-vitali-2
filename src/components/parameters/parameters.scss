@@ -2,20 +2,38 @@
 @import "../colors";
 
 .parameters {
-  min-width: 1400px;
+  width: 100%;
 
   background-color: $c_blue--purple;
 
   margin-bottom: 60px;
 
-  .parameters__form {
+  @include media_interval($media_mobile, $media_tablet) {
+    margin-bottom: 50px;
+  }
+
+  @include media_interval(0, $media_mobile) {
+    margin-bottom: 40px;
+  }
+
+  &__form {
     display: flex;
     flex-wrap: wrap;
 
-    padding-top: 43px;
+    padding-top: 41px;
     padding-bottom: 42px;
 
     align-items: start;
+
+    @include media_interval($media_mobile, $media_tablet) {
+      padding-top: 29px;
+      padding-bottom: 31px;
+    }
+
+    @include media_interval(0, $media_mobile) {
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
   }
 
   &__fieldset {
@@ -29,6 +47,12 @@
     color: $c_black;
     font-weight: bold;
     font-size: 16px;
+    line-height: 22px;
+
+    @include media_interval(0, $media_mobile) {
+      font-size: 14px;
+      line-height: 19px;
+    }
   }
 
   &__label {
@@ -37,20 +61,34 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 22px;
+
+    @include media_interval(0, $media_mobile) {
+      font-size: 14px;
+      line-height: 19px;
+    }
   }
 
   .fieldset-cost {
-    width: 206px;
-    margin-right: 92px;
+    max-width: 206px;
+    margin-right: 106px;
+
+    margin-left: 0;
+
+    @include media_interval($media_mobile, $media_tablet) {
+      margin-right: 87px;
+    }
+
+    @include media_interval(0, $media_mobile) {
+      margin-bottom: 27px;
+    }
 
     &__range-input {
-      margin-top: 26px;
-      margin-bottom: 17px;
+      margin: 26px 0 16px 5px;
     }
 
     input[type="range"] {
       -webkit-appearance: none;
-      width: 193px;
+      width: 188px;
       background: transparent;
       &::-webkit-slider-thumb {
         -webkit-appearance: none;
@@ -103,6 +141,16 @@
       &:focus::-ms-fill-upper {
         background: $c_gold;
       }
+
+      @include media_interval(0, $media_tablet) {
+        width: 184px;
+      }
+
+      @include media_interval(0, $media_mobile) {
+        margin-top: 21px;
+        margin-bottom: 11px;
+        margin-left: 5px;
+      }
     }
 
     &__scale {
@@ -111,30 +159,42 @@
       font-weight: normal;
       font-size: 16px;
       line-height: 22px;
-    }
 
-    &__scale-left {
-      float: left;
+      @include media_interval(0, $media_mobile) {
+        font-size: 14px;
+        line-height: 19px;
+      }
     }
 
     &__scale-right {
       float: right;
+      margin-right: -13px;
     }
   }
 
   .fieldset-color {
-    margin-right: 121px;
+    margin-right: 122px;
+    margin-left: 0;
+
+    @include media_interval($media_mobile, $media_tablet) {
+      margin-right: 90px;
+    }
+
+    @include media_interval(0, $media_mobile) {
+      margin-right: 110px;
+      margin-bottom: 27px;
+    }
 
     &__list {
       list-style-type: none;
-
-      padding: 0;
-
-      margin: 15px 0 0 0;
     }
 
     &__list-item {
       margin-top: 14px;
+
+      @include media_interval(0, $media_mobile) {
+        margin-top: 10px;
+      }
     }
 
     &__checkbox {
@@ -157,6 +217,13 @@
       position: relative;
 
       margin-right: 6px;
+
+      @include media_interval(0, $media_mobile) {
+        width: 17px;
+        height: 17px;
+
+        margin-right: 3px;
+      }
 
       &::before {
         content: "";
@@ -194,19 +261,31 @@
   }
 
   .fieldset-delivery {
-    margin-right: 68px;
+    margin-right: 67px;
+
+    @include media_interval(0, $media_mobile) {
+      margin-right: 0;
+    }
 
     &__list {
       list-style-type: none;
 
       padding: 0;
 
-      margin: 15px 0 0 0;
+      margin: 14px 0 0 0;
+
+      @include media_interval(0, $media_mobile) {
+        margin: 12px 0 0 0;
+      }
     }
 
     &__item {
       margin-bottom: 9px;
       cursor: pointer;
+
+      @include media_interval(0, $media_mobile) {
+        margin-bottom: 12px;
+      }
     }
 
     &__radio {
@@ -230,11 +309,18 @@
 
       margin-right: 6px;
 
+      @include media_interval(0, $media_mobile) {
+        width: 16px;
+        height: 16px;
+
+        margin-right: 4px;
+      }
+
       &::before {
         content: "";
         position: absolute;
         top: 2px;
-        left: 1.5px;
+        left: 2px;
 
         display: block;
         width: 12px;
@@ -246,6 +332,16 @@
 
         opacity: 0;
         transition: $tr_duration $tr_easing;
+
+        @include media_interval(0, $media_mobile) {
+          width: 10px;
+          height: 10px;
+
+          top: 1.5px;
+          left: 1px;
+
+          border: 5px solid $c_gold;
+        }
       }
     }
 
@@ -263,6 +359,11 @@
 
   .fieldset-amount {
     margin-right: 60px;
+    margin-left: 0;
+
+    @include media_interval($media_mobile, $media_tablet) {
+      margin: 21px 209px 0 0;
+    }
 
     &__list {
       overflow: hidden;
@@ -275,13 +376,15 @@
 
       text-align: center;
 
-      margin-top: 17px;
+      margin-top: 15px;
       margin-bottom: 0;
+
+      @include media_interval(0, $media_mobile) {
+        margin-top: 11px;
+      }
     }
 
     &__item {
-      display: inline-block;
-
       float: left;
     }
 
@@ -306,6 +409,14 @@
 
       user-select: none;
 
+      @include media_interval(0, $media_mobile) {
+        line-height: 28px;
+      }
+
+      @include media_interval(0, $media_mobile-extra-small) {
+        width: 70px;
+      }
+
       &:hover {
         color: $c_brown;
         background-color: $c_pink--light;
@@ -325,6 +436,24 @@
   }
 
   &__button {
-    margin-top: 35px;
+    margin-top: 37px;
+
+    @include media_interval($media_mobile, $media_tablet) {
+      margin-top: 52px;
+    }
+
+    @include media_interval($media_mobile-extra-small, $media_mobile) {
+      margin-top: 25px;
+      margin-left: 120px;
+
+      padding: 9px 22px;
+
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    @include media_interval(0, $media_mobile-extra-small) {
+      margin-left: 0;
+    }
   }
 }

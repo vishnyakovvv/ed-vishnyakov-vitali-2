@@ -1,9 +1,37 @@
 .description {
   margin-bottom: 60px;
 
+  @include media_interval($media_mobile, $media_tablet) {
+    margin-bottom: 50px;
+    padding-left: 0;
+  }
+
+  @include media_interval(0, $media_mobile) {
+    padding-left: 0;
+    margin-bottom: 50px;
+  }
+
+  &__wrapper {
+    padding-left: 200px;
+
+    @include media_interval(0, $media_laptop) {
+      padding-left: 0;
+    }
+  }
+
   &__title {
-    margin-bottom: 26px;
-    margin-left: 200px;
+    margin: 24px 0 27px;
+
+    @include media_interval($media_mobile, $media_laptop) {
+      font-size: 36px;
+      line-height: 44px;
+
+      margin: 18px 0 21px;
+    }
+
+    @include media_interval(0, $media_laptop) {
+      margin: 16px 0 16px;
+    }
   }
 
   &__text {
@@ -13,9 +41,12 @@
     font-size: 16px;
     line-height: 22px;
 
-    width: 670px;
+    max-width: 670px;
 
     margin-top: 0;
-    margin-left: 200px;
+
+    @include media_interval($media_tablet, $media_laptop) {
+      max-width: 880px;
+    }
   }
 }

@@ -1,15 +1,33 @@
 .animation {
-  width: 1400px;
+  max-width: 1400px;
 
   margin: 70px auto;
 
   overflow: hidden;
 
   position: relative;
+
+  @include media_interval($media_mobile, $media_tablet) {
+    transform: scale(0.55);
+    margin-left: -320px;
+    margin-top: -120px;
+    margin-bottom: -110px;
+
+    width: fit-content;
+  }
+
+  @include media_interval(0, $media_mobile) {
+    transform: scale(0.275);
+    margin-left: -516.5px;
+    margin-top: -220px;
+    margin-bottom: -205px;
+
+    width: fit-content;
+  }
 }
 
 .city {
-  width: 1585px;
+  max-width: 1585px;
 }
 
 .car_one {
@@ -69,7 +87,7 @@
 
 .car_four {
   position: absolute;
-  bottom: 231px;
+  bottom: 260px;
   left: -250px;
   animation: car_four 10s forwards linear infinite;
 }
