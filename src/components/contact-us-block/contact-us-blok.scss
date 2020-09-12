@@ -162,7 +162,7 @@
     &-subscribe-checkbox {
       display: none;
 
-      &:checked + .conact-us__form-subscribe-fake::before {
+      &:checked + .contact-us__form-subscribe-fake::before {
         opacity: 1;
       }
     }

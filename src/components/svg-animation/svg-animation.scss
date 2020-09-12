@@ -1,0 +1,43 @@
+@import "./vars";
+@import "../colors";
+@import "../mixins";
+
+.svg {
+  margin-bottom: 60px;
+
+  &__item {
+    @include media_interval(0, $media_mobile) {
+      width: 100%;
+    }
+
+    &:active {
+      .svg__item-blue {
+        opacity: 0.5;
+      }
+
+      .svg__item-green {
+        opacity: 0.5;
+      }
+
+      .svg__item-yellow {
+        opacity: 0.5;
+      }
+
+      .svg__item-red {
+        opacity: 0.5;
+      }
+
+      .svg__item-sun {
+        transform: translate(-20px, 20px);
+      }
+    }
+
+    &-blue,
+    &-green,
+    &-yellow,
+    &-red,
+    &-sun {
+      transition: $tr_duration $tr_easing;
+    }
+  }
+}

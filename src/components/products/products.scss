@@ -91,7 +91,7 @@
     width: 207px;
     height: 207px;
 
-    transition: background-color $tr_duration $tr_easing;
+    transition: $tr_duration $tr_easing;
   }
 
   &__item-link {

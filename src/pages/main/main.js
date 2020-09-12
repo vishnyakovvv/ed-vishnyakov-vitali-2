@@ -3,7 +3,8 @@
 var popup = document.querySelector(".modal_js"),
   buttonOpen = document.querySelector(".button-open_js"),
   buttonClose = document.querySelector(".button-close_js"),
-  input = document.querySelector(".input-text_js");
+  input = document.querySelector(".input-text_js"),
+  html = document.querySelector("html");
 
 buttonOpen.addEventListener("click", function () {
   popup.classList.add("modal-bg_open");
@@ -23,13 +24,13 @@ window.addEventListener("keydown", function (e) {
 
 // mobile menu
 
-var buttonOpenMenu = document.getElementById("open-mobile-menu_js"),
-  buttonCloseMenu = document.getElementById("close-mobile-menu_js");
+var buttonOpenMenu = document.querySelector(".js-button-open-menu"),
+  buttonCloseMenu = document.querySelector(".js-button-close-menu");
 
 buttonOpenMenu.addEventListener("click", function () {
-  mobile.classList.add("mobile-menu__open");
+  html.classList.add("mobile-menu__open");
 });
 
 buttonCloseMenu.addEventListener("click", function () {
-  mobile.classList.remove("mobile-menu__open");
+  html.classList.remove("mobile-menu__open");
 });

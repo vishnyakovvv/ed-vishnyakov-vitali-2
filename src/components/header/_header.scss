@@ -30,7 +30,7 @@
 
     margin: 0;
 
-    transition: $tr_duration $tr_easing;
+    transition: opacity $tr_duration $tr_easing;
 
     @include media_interval($media_mobile, $media_tablet) {
     }

@@ -76,6 +76,12 @@
 
     list-style-type: none;
 
+    @include media_interval($media_mobile, $media_tablet) {
+      max-width: 267px;
+
+      margin-left: 36px;
+    }
+
     @include media_interval(0, $media_mobile) {
       max-width: 267px;
     }
@@ -103,11 +109,16 @@
       transition: $tr_duration $tr_easing;
     }
 
+    @include media_interval($media_tablet, $media_laptop) {
+      padding: 10px 20px 5px;
+      margin-left: 41px;
+    }
+
     @include media_interval($media_mobile, $media_tablet) {
       font-size: 24px;
       line-height: 30px;
 
-      padding: 10px 180px 5px 56px;
+      padding: 10px 20px 5px;
     }
 
     @include media_interval(0, $media_mobile) {
