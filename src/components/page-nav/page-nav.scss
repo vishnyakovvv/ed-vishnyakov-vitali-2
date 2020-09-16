@@ -38,6 +38,8 @@
 
     margin: 0 31px 0 30px;
 
+    transition: $tr_duration $tr_easing;
+
     @include media_interval(0, $media_mobile) {
       font-size: 14px;
       line-height: 17px;
@@ -51,15 +53,13 @@
       color: $c_black--light;
 
       opacity: 0.5;
-
-      transition: $tr_duration $tr_easing;
     }
 
     &:active,
     &:focus {
       color: $c_gold;
 
-      transition: $tr_duration $tr_easing;
+      outline: none;
     }
   }
 
@@ -70,19 +70,23 @@
     padding: 0;
 
     cursor: pointer;
+
+    outline: none;
   }
 
-  a svg:hover #prev,
-  a svg:hover #next {
+  a :hover,
+  :focus #prev,
+  a :hover,
+  :focus #next {
     stroke: $c_gold;
 
     transition: $tr_duration $tr_easing;
   }
 
-  a svg:active #prev,
-  a svg:active #next {
+  a :active #prev,
+  a :active #next {
     stroke: $c_gold;
-    opacity: 0.5;
+    opacity: 50%;
 
     transition: $tr_duration $tr_easing;
   }

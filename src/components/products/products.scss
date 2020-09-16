@@ -67,16 +67,6 @@
         margin-right: 0;
       }
     }
-
-    &:hover .products__card-hover {
-      background-color: $c_blue--purple;
-      opacity: 0.9;
-    }
-
-    &:active .products__card-hover {
-      background-color: $c_blue--purple;
-      opacity: 0.67;
-    }
   }
 
   &__card-hover {
@@ -92,6 +82,28 @@
     height: 207px;
 
     transition: $tr_duration $tr_easing;
+
+    background-color: $c_blue--purple;
+
+    &:hover,
+    &:focus {
+      opacity: 0.9;
+    }
+
+    &:active {
+      opacity: 0.67;
+    }
+
+    &--text {
+      font-family: "Montserrat", sans-serif;
+      font-size: 26px;
+      font-weight: 800;
+      line-height: 29px;
+      color: $c_black--light;
+      text-transform: uppercase;
+
+      margin: auto;
+    }
   }
 
   &__item-link {
@@ -104,17 +116,6 @@
 
   &__img {
     margin-bottom: 27px;
-  }
-
-  &__hover-text {
-    font-family: "Montserrat", sans-serif;
-    font-size: 26px;
-    font-weight: 800;
-    line-height: 29px;
-    color: $c_black--light;
-    text-transform: uppercase;
-
-    margin: auto;
   }
 
   &__name {

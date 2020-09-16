@@ -107,10 +107,9 @@
     left: 49%;
     transform: translate(-49%, -49%);
 
-    &:hover {
+    &:hover,
+    &:focus {
       text-decoration: underline;
-
-      transition: $tr_duration $tr_easing;
     }
 
     &:active {

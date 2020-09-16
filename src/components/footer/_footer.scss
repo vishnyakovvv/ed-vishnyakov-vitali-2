@@ -80,57 +80,71 @@
         margin-bottom: 20px;
       }
     }
-  }
-  &__navigation-list {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
-    list-style-type: none;
 
-    padding: 0;
+    &-list {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 400;
+      list-style-type: none;
 
-    margin-top: 28px;
-    margin-bottom: 28px;
+      padding: 0;
 
-    @include media_interval(0, $media_mobile) {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
+      margin-top: 28px;
+      margin-bottom: 28px;
 
-      font-size: 14px;
-      line-height: 19px;
+      @include media_interval(0, $media_mobile) {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
 
-      margin-top: 21px;
-    }
-  }
-  &__navigation-item {
-    margin-bottom: 19px;
+        font-size: 14px;
+        line-height: 19px;
 
-    @include media_interval(0, $media_mobile) {
-      width: 140px;
-
-      margin-bottom: 16px;
-      margin-right: 22px;
+        margin-top: 21px;
+      }
     }
 
-    &:hover {
+    &-item {
+      margin-bottom: 19px;
+
+      @include media_interval(0, $media_mobile) {
+        width: 140px;
+
+        margin-bottom: 16px;
+        margin-right: 22px;
+      }
+
+      &:hover {
+        color: $c_white;
+
+        opacity: 0.5;
+
+        transition: $tr_duration $tr_easing;
+      }
+
+      &:active {
+        color: $c_white;
+
+        opacity: 0.2;
+      }
+    }
+
+    &-link {
+      text-transform: capitalize;
+
       color: $c_white;
 
-      opacity: 0.5;
+      &:hover,
+      &:focus {
+        opacity: 50%;
 
-      transition: $tr_duration $tr_easing;
+        transition: $tr_duration $tr_easing;
+        outline: none;
+      }
+
+      &:active {
+        opacity: 35%;
+      }
     }
-
-    &:active {
-      color: $c_white;
-
-      opacity: 0.2;
-    }
-  }
-
-  &__navigation-link {
-    text-transform: capitalize;
-
-    color: $c_white;
   }
 
   // customer
@@ -147,30 +161,30 @@
         margin-bottom: 19px;
       }
     }
-  }
 
-  &__customer-list {
-    list-style-type: none;
+    &-list {
+      list-style-type: none;
 
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
-    margin-top: 28px;
-    margin-bottom: 28px;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 400;
+      margin-top: 28px;
+      margin-bottom: 28px;
 
-    padding: 0;
+      padding: 0;
 
-    color: $c_white;
+      color: $c_white;
 
-    @include media_interval(0, $media_mobile) {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
+      @include media_interval(0, $media_mobile) {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
 
-      font-size: 14px;
-      line-height: 19px;
+        font-size: 14px;
+        line-height: 19px;
 
-      margin-top: 20px;
-      margin-bottom: 46px;
+        margin-top: 20px;
+        margin-bottom: 46px;
+      }
     }
   }
 
@@ -184,23 +198,24 @@
         margin-bottom: 24px;
       }
     }
-  }
-  &__connect-email {
-    margin-top: 25px;
-    margin-bottom: 25px;
 
-    height: 40px;
+    &-email {
+      margin-top: 25px;
+      margin-bottom: 25px;
 
-    @include media_interval(0, $media_mobile) {
-      margin-top: 24px;
-      margin-bottom: 17px;
+      height: 40px;
+
+      @include media_interval(0, $media_mobile) {
+        margin-top: 24px;
+        margin-bottom: 17px;
+      }
     }
-  }
 
-  &__connect-form {
-    display: flex;
+    &-form {
+      display: flex;
 
-    height: 40px;
+      height: 40px;
+    }
   }
 
   &__input-email {
@@ -260,14 +275,16 @@
   }
 
   &__social-link {
-    &:hover {
-      opacity: 0.5;
+    &:hover,
+    &:focus {
+      opacity: 50%;
 
       transition: $tr_duration $tr_easing;
+      outline: none;
     }
 
     &:active {
-      opacity: 0.2;
+      opacity: 35%;
     }
   }
 
@@ -380,15 +397,15 @@
 
     &--wrapper {
       color: $c_gray--light;
+      transition: $tr_duration $tr_easing;
 
       cursor: pointer;
       &:hover,
+      &:focus,
       &:active {
         color: $c_white;
 
         text-decoration: underline;
-
-        transition: $tr_duration $tr_easing;
       }
     }
   }

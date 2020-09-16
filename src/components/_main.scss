@@ -176,7 +176,8 @@ ul {
 
   cursor: pointer;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $c_gold;
 
     transition: $tr_duration $tr_easing;
@@ -184,11 +185,6 @@ ul {
     outline: none;
   }
 
-  &:focus {
-    outline: none;
-
-    transition: $tr_duration $tr_easing;
-  }
   &:active {
     background-color: $c_gold--light;
 

@@ -103,10 +103,13 @@
     }
 
     &:hover,
-    &:active {
+    &:active,
+    &:focus {
       background-color: $c_blue--light-extra-2;
 
       transition: $tr_duration $tr_easing;
+
+      outline: none;
     }
 
     @include media_interval($media_tablet, $media_laptop) {

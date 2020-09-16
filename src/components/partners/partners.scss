@@ -30,14 +30,6 @@
 
         text-align: center;
       }
-
-      &:hover {
-        opacity: 55%;
-      }
-
-      &:active {
-        opacity: 35%;
-      }
     }
     &__img {
       @include media_interval(0, $media_mobile) {
@@ -46,6 +38,16 @@
     }
 
     &-link {
+      &:hover,
+      &:focus {
+        opacity: 55%;
+
+        outline: none;
+      }
+
+      &:active {
+        opacity: 35%;
+      }
       transition: $tr_duration $tr_easing;
     }
   }

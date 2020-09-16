@@ -50,8 +50,10 @@
       }
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
       opacity: 50%;
+      outline: none;
     }
 
     &:active {
@@ -86,16 +88,6 @@
   &__nav-item {
     margin-right: 21px;
     margin-bottom: 6px;
-
-    transition: $tr_duration $tr_easing;
-
-    &:hover {
-      opacity: 0.5;
-    }
-
-    &:active {
-      opacity: 0.2;
-    }
   }
 
   &__nav-link {
@@ -103,6 +95,18 @@
     font-size: 14px;
     line-height: 19px;
     color: $c_black;
+
+    transition: $tr_duration $tr_easing;
+
+    &:hover,
+    &:focus {
+      opacity: 50%;
+      outline: none;
+    }
+
+    &:active {
+      opacity: 25%;
+    }
   }
 
   &__nav-info {
@@ -131,16 +135,6 @@
       @include media_interval(0, $media_mobile) {
         display: none;
       }
-
-      transition: $tr_duration $tr_easing;
-
-      &:hover {
-        opacity: 0.5;
-      }
-
-      &:active {
-        opacity: 0.2;
-      }
     }
 
     &--LINK {
@@ -150,20 +144,22 @@
       line-height: 19px;
       color: $c_black;
       letter-spacing: 0.5px;
+
+      transition: $tr_duration $tr_easing;
+
+      &:hover,
+      &:focus {
+        opacity: 50%;
+        outline: none;
+      }
+
+      &:active {
+        opacity: 25%;
+      }
     }
 
     &--SEARCH {
       margin: 0;
-
-      transition: $tr_duration $tr_easing;
-
-      &:hover {
-        opacity: 0.5;
-      }
-
-      &:active {
-        opacity: 0.2;
-      }
     }
   }
 
@@ -176,6 +172,18 @@
     padding: 0;
 
     outline: none;
+
+    transition: $tr_duration $tr_easing;
+
+    &:hover,
+    &:focus {
+      opacity: 50%;
+      outline: none;
+    }
+
+    &:active {
+      opacity: 25%;
+    }
 
     @include media_interval($media_mobile, $media_tablet) {
       padding: 0;
