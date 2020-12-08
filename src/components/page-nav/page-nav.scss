@@ -32,11 +32,17 @@
     line-height: 20px;
     color: $c_black--light;
 
+    background-color: $c_white;
+
+    border: none;
+
     line-height: 20px;
 
     padding: 0;
 
     margin: 0 31px 0 30px;
+
+    cursor: pointer;
 
     transition: $tr_duration $tr_easing;
 
@@ -69,25 +75,25 @@
 
     padding: 0;
 
+    border: none;
+
     cursor: pointer;
 
     outline: none;
-  }
-
-  a :hover,
-  :focus #prev,
-  a :hover,
-  :focus #next {
-    stroke: $c_gold;
 
     transition: $tr_duration $tr_easing;
   }
 
-  a :active #prev,
-  a :active #next {
-    stroke: $c_gold;
-    opacity: 50%;
+  // a :hover,
+  // :focus #prev,
+  // a :hover,
+  // :focus #next {
+  //   stroke: $c_gold;
+  // }
 
-    transition: $tr_duration $tr_easing;
-  }
+  // a :active #prev,
+  // a :active #next {
+  //   stroke: $c_gold;
+  //   opacity: 50%;
+  // }
 }
